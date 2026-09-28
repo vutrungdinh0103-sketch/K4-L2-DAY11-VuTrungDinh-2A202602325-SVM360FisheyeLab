@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>5</id>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-09-28 08:25:30.603227+00:00</created>
+      <updated>2026-09-28 08:38:06.900972+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>0</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>5</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://localhost:8080/api/jobs/5/dataset/export/api/jobs/5</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>dinhvt</username>
+        <email>vutrungdinh0103@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>parking_line</name>
+          <color>#ffcc00</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>free_space</name>
+          <color>#35c98b</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-09-28 08:39:47.177913+00:00</dumped>
+  </meta>
+  <image id="0" name="parking-lot-core.jpg" width="960" height="720">
+    <polyline label="parking_line" source="manual" occluded="0" points="47.40,572.89;60.02,522.85" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="247.61,563.79;177.44,524.94" z_order="0">
+    </polyline>
+    <polygon label="free_space" source="manual" occluded="0" points="251.60,565.47;0.00,576.70;-0.00,682.27;414.71,649.04;700.47,622.76;922.20,595.80;960.00,592.01;960.00,524.52" z_order="0">
+    </polygon>
+  </image>
+</annotations>
