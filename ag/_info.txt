@@ -1,0 +1,689 @@
+### submission/r1_craft/annotations.xml
+image name=adasind_145860.jpg w=1080 h=1920 id=0
+  box label=Car           xtl=42.8 ytl=861.5 xbr=148.4 ybr=944.7 source=manual occluded=false
+  box label=Truck         xtl=394.0 ytl=798.0 xbr=485.0 ybr=912.0 source=file occluded=false
+  polygon label=ignore_region reason=ego_body bbox=(0,1018)-(346,1792) n=72
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,1026) n=40
+  polygon label=ignore_region reason=lens_border bbox=(0,1026)-(1080,1920) n=40
+image name=adasind_167700.jpg w=1080 h=1920 id=1
+  box label=Truck         xtl=552.0 ytl=870.5 xbr=606.2 ybr=937.8 source=manual occluded=true
+  box label=ThreeWheeler  xtl=161.4 ytl=930.3 xbr=261.0 ybr=1099.0 source=manual occluded=true
+  box label=Pedestrian    xtl=263.8 ytl=927.0 xbr=341.8 ybr=1099.1 source=manual occluded=true
+  box label=Bike          xtl=309.5 ytl=980.7 xbr=362.4 ybr=1105.8 source=manual occluded=false
+  box label=Truck         xtl=581.0 ytl=872.8 xbr=700.3 ybr=1000.2 source=manual occluded=false
+  box label=Truck         xtl=485.5 ytl=899.1 xbr=545.7 ybr=949.7 source=manual occluded=false
+  box label=ThreeWheeler  xtl=25.5 ytl=920.2 xbr=214.3 ybr=1180.2 source=manual occluded=false
+  box label=Pedestrian    xtl=359.2 ytl=881.0 xbr=487.1 ybr=1210.8 source=manual occluded=false
+  box label=Pedestrian    xtl=917.4 ytl=727.0 xbr=1080.0 ybr=1416.2 source=manual occluded=false
+  box label=Bike          xtl=361.1 ytl=969.1 xbr=610.9 ybr=1181.9 source=manual occluded=true
+  box label=Bike          xtl=755.1 ytl=949.7 xbr=1080.0 ybr=1292.6 source=manual occluded=true
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,984) n=40
+  polygon label=ignore_region reason=lens_border bbox=(0,984)-(1080,1920) n=41
+  polygon label=ignore_region reason=ego_body bbox=(0,1185)-(322,1695) n=50
+  polygon label=ignore_region reason=ego_body bbox=(428,1730)-(548,1766) n=20
+image name=adasind_199770.jpg w=1080 h=1920 id=2
+  box label=Bike          xtl=538.3 ytl=892.0 xbr=666.2 ybr=1005.8 source=manual occluded=true
+  box label=Pedestrian    xtl=615.4 ytl=830.4 xbr=702.0 ybr=1022.0 source=manual occluded=false
+  box label=Pedestrian    xtl=350.8 ytl=830.2 xbr=369.4 ybr=886.0 source=manual occluded=false
+  box label=ThreeWheeler  xtl=424.5 ytl=817.0 xbr=529.5 ybr=950.3 source=manual occluded=false
+  box label=Truck         xtl=224.0 ytl=814.4 xbr=273.2 ybr=862.0 source=manual occluded=false
+  box label=Truck         xtl=93.0 ytl=847.5 xbr=117.4 ybr=903.4 source=manual occluded=false
+  box label=Pedestrian    xtl=954.5 ytl=851.9 xbr=1080.0 ybr=1553.5 source=manual occluded=false
+  box label=ThreeWheeler  xtl=925.8 ytl=814.9 xbr=1080.0 ybr=1306.2 source=manual occluded=false
+  box label=Pedestrian    xtl=660.9 ytl=834.3 xbr=704.4 ybr=977.4 source=manual occluded=true
+  box label=Pedestrian    xtl=611.1 ytl=838.4 xbr=654.5 ybr=974.1 source=manual occluded=true
+  box label=ThreeWheeler  xtl=0.0 ytl=782.9 xbr=80.2 ybr=936.6 source=manual occluded=false
+  box label=ThreeWheeler  xtl=373.7 ytl=822.5 xbr=465.0 ybr=904.4 source=manual occluded=true
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,508) n=20
+  polygon label=ignore_region reason=lens_border bbox=(0,1477)-(1080,1920) n=20
+  polygon label=ignore_region reason=ego_body bbox=(0,980)-(140,1603) n=56
+
+### submission/rework/annotations-v2.xml
+image name=adasind_145860.jpg w=1080 h=1920 id=0
+  box label=Car           xtl=42.8 ytl=861.5 xbr=148.4 ybr=944.7 source=manual occluded=false
+  box label=Truck         xtl=394.0 ytl=798.0 xbr=485.0 ybr=912.0 source=manual occluded=false
+  polygon label=ignore_region reason=ego_body bbox=(0,1018)-(346,1792) n=72
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,1026) n=40
+  polygon label=ignore_region reason=lens_border bbox=(0,1026)-(1080,1920) n=40
+image name=adasind_167700.jpg w=1080 h=1920 id=1
+  box label=Truck         xtl=552.0 ytl=870.5 xbr=606.2 ybr=937.8 source=manual occluded=true
+  box label=Pedestrian    xtl=263.8 ytl=927.0 xbr=341.8 ybr=1099.1 source=manual occluded=true
+  box label=Bike          xtl=296.0 ytl=942.0 xbr=346.0 ybr=1112.0 source=manual occluded=false
+  box label=Car           xtl=581.0 ytl=872.8 xbr=700.3 ybr=1000.2 source=manual occluded=false
+  box label=Truck         xtl=485.5 ytl=899.1 xbr=545.7 ybr=949.7 source=manual occluded=false
+  box label=ThreeWheeler  xtl=25.5 ytl=920.2 xbr=214.3 ybr=1180.2 source=manual occluded=false
+  box label=Pedestrian    xtl=359.2 ytl=881.0 xbr=487.1 ybr=1210.8 source=manual occluded=false
+  box label=Bike          xtl=361.1 ytl=969.1 xbr=610.9 ybr=1181.9 source=manual occluded=true
+  box label=Bike          xtl=755.0 ytl=1049.0 xbr=975.0 ybr=1283.0 source=manual occluded=true
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,984) n=40
+  polygon label=ignore_region reason=lens_border bbox=(0,984)-(1080,1920) n=41
+  polygon label=ignore_region reason=ego_body bbox=(0,1185)-(322,1695) n=50
+  polygon label=ignore_region reason=ego_body bbox=(428,1730)-(548,1766) n=20
+image name=adasind_199770.jpg w=1080 h=1920 id=2
+  box label=Bike          xtl=539.0 ytl=880.0 xbr=610.0 ybr=997.0 source=manual occluded=true
+  box label=Pedestrian    xtl=615.4 ytl=830.4 xbr=702.0 ybr=1022.0 source=manual occluded=false
+  box label=ThreeWheeler  xtl=424.5 ytl=817.0 xbr=529.5 ybr=950.3 source=manual occluded=false
+  box label=Truck         xtl=224.0 ytl=814.4 xbr=273.2 ybr=862.0 source=manual occluded=false
+  box label=Bike          xtl=93.0 ytl=847.5 xbr=117.4 ybr=903.4 source=manual occluded=false
+  box label=ThreeWheeler  xtl=0.0 ytl=782.9 xbr=80.2 ybr=936.6 source=manual occluded=false
+  box label=Pedestrian    xtl=847.0 ytl=829.0 xbr=905.0 ybr=947.0 source=manual occluded=false
+  box label=Bike          xtl=109.0 ytl=839.0 xbr=144.0 ybr=882.0 source=manual occluded=true
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,508) n=20
+  polygon label=ignore_region reason=lens_border bbox=(0,1477)-(1080,1920) n=20
+  polygon label=ignore_region reason=ego_body bbox=(0,980)-(140,1603) n=56
+
+### data/_ref/B3-dense.xml
+image name=adasind_145860.jpg w=1080 h=1920 id=0
+  box label=Truck         xtl=394.0 ytl=798.0 xbr=485.0 ybr=912.0 source=file occluded=false
+  box label=Car           xtl=44.0 ytl=862.0 xbr=145.0 ybr=942.0 source=file occluded=false
+  polygon label=ignore_region reason=unreadable bbox=(238,859)-(281,908) n=4
+  polygon label=ignore_region reason=unreadable bbox=(0,885)-(53,944) n=4
+  polygon label=ignore_region reason=ego_body bbox=(0,1020)-(200,1850) n=13
+  polygon label=ignore_region reason=ego_body bbox=(250,1720)-(350,1800) n=4
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,1026) n=40
+  polygon label=ignore_region reason=lens_border bbox=(0,1026)-(1080,1920) n=40
+image name=adasind_167700.jpg w=1080 h=1920 id=1
+  box label=Pedestrian    xtl=349.0 ytl=898.0 xbr=454.0 ybr=1192.0 source=file occluded=false
+  box label=Bike          xtl=755.0 ytl=1049.0 xbr=975.0 ybr=1283.0 source=file occluded=false
+  box label=Pedestrian    xtl=266.0 ytl=934.0 xbr=327.0 ybr=1103.0 source=file occluded=false
+  box label=Car           xtl=587.0 ytl=877.0 xbr=699.0 ybr=1005.0 source=file occluded=false
+  box label=Bike          xtl=430.0 ytl=975.0 xbr=589.0 ybr=1177.0 source=file occluded=false
+  box label=ThreeWheeler  xtl=16.0 ytl=916.0 xbr=242.0 ybr=1175.0 source=file occluded=false
+  box label=Truck         xtl=467.0 ytl=896.0 xbr=546.0 ybr=950.0 source=file occluded=false
+  box label=Truck         xtl=551.0 ytl=871.0 xbr=600.0 ybr=938.0 source=file occluded=true
+  box label=Bike          xtl=296.0 ytl=942.0 xbr=346.0 ybr=1112.0 source=file occluded=false
+  polygon label=ignore_region reason=ego_body bbox=(922,747)-(1077,1443) n=4
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,984) n=40
+  polygon label=ignore_region reason=lens_border bbox=(0,984)-(1080,1920) n=41
+image name=adasind_199770.jpg w=1080 h=1920 id=2
+  box label=Pedestrian    xtl=618.0 ytl=836.0 xbr=701.0 ybr=1018.0 source=file occluded=false
+  box label=ThreeWheeler  xtl=1.0 ytl=729.0 xbr=90.0 ybr=939.0 source=file occluded=false
+  box label=Pedestrian    xtl=847.0 ytl=829.0 xbr=905.0 ybr=947.0 source=file occluded=false
+  box label=ThreeWheeler  xtl=935.0 ytl=990.0 xbr=1080.0 ybr=1300.0 source=file occluded=false
+  box label=Bike          xtl=91.0 ytl=836.0 xbr=119.0 ybr=903.0 source=file occluded=true
+  box label=Bike          xtl=109.0 ytl=839.0 xbr=144.0 ybr=882.0 source=file occluded=true
+  box label=Truck         xtl=211.0 ytl=816.0 xbr=275.0 ybr=861.0 source=file occluded=false
+  box label=ThreeWheeler  xtl=371.0 ytl=810.0 xbr=532.0 ybr=947.0 source=file occluded=false
+  box label=Bike          xtl=539.0 ytl=880.0 xbr=610.0 ybr=997.0 source=file occluded=false
+  polygon label=ignore_region reason=ego_body bbox=(924,813)-(1080,1552) n=4
+  polygon label=ignore_region reason=lens_border bbox=(0,0)-(1080,996) n=40
+  polygon label=ignore_region reason=lens_border bbox=(0,996)-(1080,1920) n=41
+
+### assets/model-yolo26m.xml
+image name=adasind_001320.jpg w=1080 h=1920 id=0
+  box label=Pedestrian    xtl=80.9 ytl=848.0 xbr=122.8 ybr=967.5 source=auto occluded=false
+  box label=Truck         xtl=339.5 ytl=809.1 xbr=461.8 ybr=944.9 source=auto occluded=false
+  box label=Pedestrian    xtl=450.3 ytl=845.3 xbr=525.1 ybr=973.7 source=auto occluded=false
+  box label=Bike          xtl=450.7 ytl=905.3 xbr=534.5 ybr=1018.8 source=auto occluded=false
+  box label=Truck         xtl=88.9 ytl=805.6 xbr=185.5 ybr=939.1 source=auto occluded=false
+  box label=Truck         xtl=0.1 ytl=830.8 xbr=82.6 ybr=1016.5 source=auto occluded=false
+  box label=Pedestrian    xtl=0.2 ytl=1159.6 xbr=248.3 ybr=1619.1 source=auto occluded=false
+  box label=Pedestrian    xtl=0.1 ytl=1183.3 xbr=151.9 ybr=1428.7 source=auto occluded=false
+  box label=Car           xtl=220.5 ytl=857.8 xbr=237.5 ybr=884.2 source=auto occluded=false
+image name=adasind_006840.jpg w=1080 h=1920 id=1
+  box label=Bike          xtl=672.7 ytl=907.4 xbr=761.8 ybr=988.9 source=auto occluded=false
+  box label=Pedestrian    xtl=42.1 ytl=808.7 xbr=74.1 ybr=904.8 source=auto occluded=false
+  box label=Pedestrian    xtl=89.0 ytl=805.7 xbr=140.8 ybr=914.5 source=auto occluded=false
+  box label=Car           xtl=233.1 ytl=829.9 xbr=266.3 ybr=873.0 source=auto occluded=false
+  box label=Bike          xtl=257.1 ytl=856.9 xbr=311.7 ybr=947.4 source=auto occluded=false
+  box label=Pedestrian    xtl=252.8 ytl=811.2 xbr=321.0 ybr=918.2 source=auto occluded=false
+  box label=Bike          xtl=92.0 ytl=858.5 xbr=137.8 ybr=938.6 source=auto occluded=false
+  box label=Truck         xtl=187.9 ytl=820.2 xbr=235.2 ybr=882.2 source=auto occluded=false
+  box label=Pedestrian    xtl=253.9 ytl=810.0 xbr=304.5 ybr=930.7 source=auto occluded=false
+  box label=Car           xtl=187.9 ytl=820.2 xbr=235.4 ybr=882.8 source=auto occluded=false
+  box label=Pedestrian    xtl=16.0 ytl=827.9 xbr=42.7 ybr=909.3 source=auto occluded=false
+  box label=Bus           xtl=300.2 ytl=817.6 xbr=365.9 ybr=881.5 source=auto occluded=false
+  box label=Car           xtl=365.0 ytl=796.6 xbr=570.3 ybr=1023.1 source=auto occluded=false
+image name=adasind_010260.jpg w=1080 h=1920 id=2
+  box label=Pedestrian    xtl=126.8 ytl=823.3 xbr=259.6 ybr=1086.7 source=auto occluded=false
+  box label=Bike          xtl=124.3 ytl=973.3 xbr=243.4 ybr=1178.5 source=auto occluded=false
+  box label=Pedestrian    xtl=487.2 ytl=885.2 xbr=508.2 ybr=971.5 source=auto occluded=false
+  box label=Car           xtl=425.8 ytl=895.1 xbr=476.5 ybr=958.0 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=853.9 xbr=91.1 ybr=1065.4 source=auto occluded=false
+  box label=Pedestrian    xtl=579.8 ytl=889.4 xbr=611.1 ybr=988.2 source=auto occluded=false
+  box label=Truck         xtl=199.7 ytl=857.3 xbr=310.5 ybr=1009.9 source=auto occluded=false
+  box label=Bike          xtl=0.9 ytl=945.5 xbr=92.3 ybr=1095.5 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1182.6 xbr=268.7 ybr=1712.3 source=auto occluded=false
+  box label=Bike          xtl=371.2 ytl=915.8 xbr=411.0 ybr=985.8 source=auto occluded=false
+  box label=Car           xtl=301.1 ytl=877.5 xbr=337.4 ybr=924.7 source=auto occluded=false
+  box label=Pedestrian    xtl=462.6 ytl=888.9 xbr=492.9 ybr=983.2 source=auto occluded=false
+  box label=Truck         xtl=44.6 ytl=863.7 xbr=130.4 ybr=980.3 source=auto occluded=false
+  box label=Car           xtl=44.8 ytl=174.1 xbr=1064.8 ybr=1108.5 source=auto occluded=false
+  box label=Pedestrian    xtl=467.2 ytl=888.8 xbr=492.7 ybr=965.0 source=auto occluded=false
+  box label=Bike          xtl=540.2 ytl=921.6 xbr=576.9 ybr=992.1 source=auto occluded=false
+  box label=Car           xtl=62.9 ytl=960.7 xbr=1074.7 ybr=1920.0 source=auto occluded=false
+  box label=Pedestrian    xtl=369.8 ytl=898.8 xbr=411.4 ybr=965.6 source=auto occluded=false
+  box label=Bike          xtl=0.0 ytl=1034.7 xbr=153.1 ybr=1246.7 source=auto occluded=false
+image name=adasind_012570.jpg w=1080 h=1920 id=3
+  box label=Bike          xtl=713.8 ytl=961.3 xbr=839.5 ybr=1047.1 source=auto occluded=false
+  box label=Pedestrian    xtl=133.7 ytl=900.7 xbr=181.6 ybr=1029.0 source=auto occluded=false
+  box label=Car           xtl=0.0 ytl=921.6 xbr=30.3 ybr=1026.9 source=auto occluded=false
+  box label=Pedestrian    xtl=96.9 ytl=893.2 xbr=134.6 ybr=1024.4 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1221.0 xbr=278.6 ybr=1694.4 source=auto occluded=false
+  box label=Bike          xtl=330.8 ytl=930.3 xbr=362.0 ybr=992.8 source=auto occluded=false
+  box label=Car           xtl=312.7 ytl=923.6 xbr=336.0 ybr=956.4 source=auto occluded=false
+  box label=Truck         xtl=387.0 ytl=907.2 xbr=485.5 ybr=1024.0 source=auto occluded=false
+  box label=Car           xtl=224.1 ytl=905.8 xbr=321.2 ybr=1027.7 source=auto occluded=false
+  box label=Car           xtl=336.3 ytl=916.6 xbr=382.7 ybr=971.2 source=auto occluded=false
+  box label=Truck         xtl=224.6 ytl=905.9 xbr=321.5 ybr=1027.3 source=auto occluded=false
+  box label=Car           xtl=387.0 ytl=907.4 xbr=485.4 ybr=1023.8 source=auto occluded=false
+  box label=Bike          xtl=509.4 ytl=939.5 xbr=548.7 ybr=1007.4 source=auto occluded=false
+  box label=Car           xtl=377.4 ytl=930.7 xbr=393.1 ybr=955.5 source=auto occluded=false
+  box label=Bike          xtl=509.8 ytl=935.8 xbr=570.0 ybr=1007.7 source=auto occluded=false
+image name=adasind_014670.jpg w=1080 h=1920 id=4
+  box label=Car           xtl=780.4 ytl=972.8 xbr=1080.0 ybr=1174.0 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1235.5 xbr=295.8 ybr=1685.5 source=auto occluded=false
+  box label=Bus           xtl=0.4 ytl=825.4 xbr=80.9 ybr=1088.6 source=auto occluded=false
+  box label=Pedestrian    xtl=481.6 ytl=964.8 xbr=501.7 ybr=1022.4 source=auto occluded=false
+  box label=Pedestrian    xtl=536.2 ytl=963.5 xbr=559.6 ybr=1040.4 source=auto occluded=false
+  box label=Truck         xtl=58.3 ytl=909.5 xbr=248.3 ybr=1144.4 source=auto occluded=false
+  box label=Truck         xtl=358.9 ytl=953.2 xbr=397.7 ybr=1002.2 source=auto occluded=false
+  box label=Car           xtl=403.1 ytl=956.4 xbr=429.0 ybr=987.9 source=auto occluded=false
+image name=adasind_019560.jpg w=1080 h=1920 id=5
+  box label=Bike          xtl=593.3 ytl=796.1 xbr=729.9 ybr=911.0 source=auto occluded=false
+  box label=Pedestrian    xtl=629.8 ytl=741.2 xbr=687.2 ybr=907.0 source=auto occluded=false
+  box label=Bike          xtl=890.3 ytl=796.5 xbr=980.1 ybr=895.8 source=auto occluded=false
+  box label=Bike          xtl=420.5 ytl=791.8 xbr=520.6 ybr=918.6 source=auto occluded=false
+  box label=Pedestrian    xtl=456.2 ytl=731.0 xbr=536.1 ybr=833.4 source=auto occluded=false
+  box label=Bike          xtl=327.9 ytl=778.1 xbr=389.6 ybr=849.5 source=auto occluded=false
+  box label=Truck         xtl=43.1 ytl=772.1 xbr=98.2 ybr=853.1 source=auto occluded=false
+  box label=Truck         xtl=287.0 ytl=741.3 xbr=337.2 ybr=826.7 source=auto occluded=false
+image name=adasind_032280.jpg w=1080 h=1920 id=6
+  box label=Pedestrian    xtl=756.0 ytl=934.1 xbr=855.0 ybr=1272.2 source=auto occluded=false
+  box label=Bike          xtl=449.6 ytl=1021.0 xbr=682.8 ybr=1388.9 source=auto occluded=false
+  box label=Pedestrian    xtl=477.1 ytl=950.5 xbr=650.5 ybr=1272.7 source=auto occluded=false
+  box label=Car           xtl=610.8 ytl=951.8 xbr=1041.0 ybr=1197.3 source=auto occluded=false
+  box label=Car           xtl=229.0 ytl=997.2 xbr=279.7 ybr=1052.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1295.2 xbr=186.5 ybr=1609.4 source=auto occluded=false
+  box label=Pedestrian    xtl=284.2 ytl=1000.3 xbr=318.6 ybr=1064.5 source=auto occluded=false
+  box label=Car           xtl=18.8 ytl=912.6 xbr=1037.9 ybr=1917.6 source=auto occluded=false
+  box label=Bike          xtl=178.9 ytl=1013.0 xbr=194.5 ybr=1041.2 source=auto occluded=false
+  box label=Car           xtl=53.6 ytl=961.6 xbr=176.0 ybr=1122.9 source=auto occluded=false
+  box label=Bike          xtl=285.7 ytl=1021.0 xbr=323.4 ybr=1077.5 source=auto occluded=false
+  box label=Bike          xtl=285.6 ytl=1026.4 xbr=318.4 ybr=1071.1 source=auto occluded=false
+image name=adasind_034080.jpg w=1080 h=1920 id=7
+  box label=Car           xtl=0.0 ytl=1028.5 xbr=123.7 ybr=1144.9 source=auto occluded=false
+  box label=Car           xtl=639.1 ytl=1055.7 xbr=936.0 ybr=1224.6 source=auto occluded=false
+  box label=Car           xtl=511.2 ytl=1073.7 xbr=572.5 ybr=1152.1 source=auto occluded=false
+  box label=Pedestrian    xtl=749.2 ytl=1018.9 xbr=806.8 ybr=1236.1 source=auto occluded=false
+  box label=Pedestrian    xtl=998.8 ytl=1026.0 xbr=1077.6 ybr=1220.2 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1397.4 xbr=209.0 ybr=1653.8 source=auto occluded=false
+  box label=Pedestrian    xtl=131.5 ytl=1014.5 xbr=177.6 ybr=1110.6 source=auto occluded=false
+  box label=Pedestrian    xtl=114.4 ytl=998.6 xbr=277.7 ybr=1237.4 source=auto occluded=false
+  box label=Bike          xtl=160.2 ytl=1135.0 xbr=249.6 ybr=1298.8 source=auto occluded=false
+  box label=Car           xtl=333.5 ytl=1068.2 xbr=363.2 ybr=1103.4 source=auto occluded=false
+  box label=Car           xtl=360.6 ytl=1069.9 xbr=386.9 ybr=1108.7 source=auto occluded=false
+  box label=Car           xtl=376.4 ytl=1030.7 xbr=519.0 ybr=1200.1 source=auto occluded=false
+  box label=Car           xtl=239.1 ytl=1032.5 xbr=298.9 ybr=1096.5 source=auto occluded=false
+  box label=Pedestrian    xtl=168.5 ytl=997.6 xbr=275.9 ybr=1235.1 source=auto occluded=false
+image name=adasind_036720.jpg w=1080 h=1920 id=8
+  box label=Pedestrian    xtl=33.9 ytl=976.9 xbr=78.1 ybr=1137.4 source=auto occluded=false
+  box label=Car           xtl=262.6 ytl=1023.5 xbr=303.9 ybr=1057.5 source=auto occluded=false
+  box label=Car           xtl=224.8 ytl=1023.4 xbr=263.5 ybr=1052.4 source=auto occluded=false
+  box label=Car           xtl=166.3 ytl=1019.5 xbr=187.2 ybr=1041.6 source=auto occluded=false
+  box label=Bike          xtl=44.0 ytl=1061.7 xbr=70.5 ybr=1163.6 source=auto occluded=false
+  box label=Car           xtl=357.6 ytl=1021.0 xbr=436.2 ybr=1089.4 source=auto occluded=false
+  box label=Car           xtl=481.7 ytl=1014.4 xbr=591.5 ybr=1117.3 source=auto occluded=false
+  box label=Pedestrian    xtl=0.1 ytl=1244.0 xbr=121.9 ybr=1569.2 source=auto occluded=false
+  box label=Pedestrian    xtl=110.6 ytl=1018.5 xbr=121.4 ybr=1047.0 source=auto occluded=false
+  box label=Bike          xtl=36.5 ytl=1062.6 xbr=75.1 ybr=1162.4 source=auto occluded=false
+  box label=Car           xtl=128.8 ytl=1010.0 xbr=151.3 ybr=1044.6 source=auto occluded=false
+image name=adasind_043110.jpg w=1080 h=1920 id=9
+  box label=Pedestrian    xtl=0.0 ytl=843.3 xbr=64.4 ybr=1043.7 source=auto occluded=false
+  box label=Pedestrian    xtl=186.6 ytl=836.7 xbr=251.8 ybr=960.0 source=auto occluded=false
+  box label=Bus           xtl=669.7 ytl=639.4 xbr=1080.0 ybr=1038.3 source=auto occluded=false
+  box label=Pedestrian    xtl=65.9 ytl=851.6 xbr=124.5 ybr=963.0 source=auto occluded=false
+  box label=Bike          xtl=0.1 ytl=970.9 xbr=44.9 ybr=1097.3 source=auto occluded=false
+  box label=Bike          xtl=192.8 ytl=885.2 xbr=245.6 ybr=987.5 source=auto occluded=false
+  box label=Bike          xtl=74.6 ytl=917.2 xbr=126.1 ybr=990.4 source=auto occluded=false
+  box label=Truck         xtl=267.1 ytl=820.3 xbr=424.9 ybr=993.1 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1213.5 xbr=218.4 ybr=1634.8 source=auto occluded=false
+  box label=Car           xtl=150.4 ytl=861.9 xbr=189.6 ybr=909.5 source=auto occluded=false
+  box label=Bike          xtl=0.2 ytl=946.0 xbr=63.6 ybr=1098.0 source=auto occluded=false
+image name=adasind_048720.jpg w=1080 h=1920 id=10
+  box label=Pedestrian    xtl=94.1 ytl=869.7 xbr=235.2 ybr=1126.3 source=auto occluded=false
+  box label=Car           xtl=304.6 ytl=927.6 xbr=349.7 ybr=967.3 source=auto occluded=false
+  box label=Car           xtl=224.1 ytl=919.9 xbr=300.7 ybr=975.5 source=auto occluded=false
+  box label=Pedestrian    xtl=1.7 ytl=1209.8 xbr=358.8 ybr=1725.9 source=auto occluded=false
+  box label=Bike          xtl=120.0 ytl=1048.1 xbr=226.0 ybr=1203.9 source=auto occluded=false
+  box label=Car           xtl=0.5 ytl=940.8 xbr=89.9 ybr=1017.2 source=auto occluded=false
+  box label=Car           xtl=343.1 ytl=912.6 xbr=426.2 ybr=969.9 source=auto occluded=false
+  box label=Car           xtl=162.5 ytl=911.8 xbr=245.5 ybr=1035.8 source=auto occluded=false
+  box label=Car           xtl=486.9 ytl=873.2 xbr=639.0 ybr=977.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.4 ytl=984.1 xbr=23.4 ybr=1048.7 source=auto occluded=false
+  box label=Car           xtl=72.1 ytl=943.8 xbr=100.0 ybr=985.8 source=auto occluded=false
+  box label=Bike          xtl=48.4 ytl=958.5 xbr=89.8 ybr=1024.5 source=auto occluded=false
+image name=adasind_056040.jpg w=1080 h=1920 id=11
+  box label=Car           xtl=536.9 ytl=739.0 xbr=634.5 ybr=911.9 source=auto occluded=false
+  box label=Pedestrian    xtl=0.4 ytl=720.0 xbr=138.6 ybr=1042.2 source=auto occluded=false
+  box label=Bike          xtl=15.3 ytl=920.2 xbr=122.5 ybr=1098.1 source=auto occluded=false
+  box label=Pedestrian    xtl=211.4 ytl=774.6 xbr=248.8 ybr=851.8 source=auto occluded=false
+  box label=Truck         xtl=258.0 ytl=716.4 xbr=477.0 ybr=962.5 source=auto occluded=false
+  box label=Car           xtl=80.5 ytl=750.6 xbr=191.9 ybr=982.3 source=auto occluded=false
+  box label=Pedestrian    xtl=481.0 ytl=757.2 xbr=535.0 ybr=909.1 source=auto occluded=false
+  box label=Bike          xtl=174.3 ytl=818.0 xbr=224.8 ybr=920.9 source=auto occluded=false
+  box label=Bike          xtl=180.3 ytl=848.7 xbr=222.2 ybr=921.4 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1055.6 xbr=221.2 ybr=1584.9 source=auto occluded=false
+  box label=Pedestrian    xtl=171.3 ytl=772.5 xbr=217.7 ybr=866.2 source=auto occluded=false
+image name=adasind_060000.jpg w=1080 h=1920 id=12
+  box label=Pedestrian    xtl=0.0 ytl=1125.1 xbr=197.7 ybr=1725.4 source=auto occluded=false
+  box label=Pedestrian    xtl=81.8 ytl=823.0 xbr=169.8 ybr=1008.9 source=auto occluded=false
+  box label=Bike          xtl=91.5 ytl=936.6 xbr=157.1 ybr=1050.8 source=auto occluded=false
+  box label=Pedestrian    xtl=13.1 ytl=874.9 xbr=41.7 ybr=960.2 source=auto occluded=false
+  box label=Pedestrian    xtl=58.1 ytl=873.0 xbr=79.4 ybr=951.7 source=auto occluded=false
+  box label=Pedestrian    xtl=185.6 ytl=870.1 xbr=201.5 ybr=913.1 source=auto occluded=false
+  box label=Pedestrian    xtl=39.6 ytl=868.6 xbr=60.5 ybr=947.7 source=auto occluded=false
+  box label=Pedestrian    xtl=36.9 ytl=868.6 xbr=65.0 ybr=974.4 source=auto occluded=false
+  box label=Truck         xtl=347.0 ytl=854.7 xbr=422.7 ybr=941.7 source=auto occluded=false
+  box label=Car           xtl=347.0 ytl=855.0 xbr=422.8 ybr=942.5 source=auto occluded=false
+  box label=Pedestrian    xtl=347.1 ytl=863.2 xbr=368.5 ybr=940.9 source=auto occluded=false
+  box label=Car           xtl=216.8 ytl=867.3 xbr=257.5 ybr=919.9 source=auto occluded=false
+  box label=Pedestrian    xtl=264.2 ytl=872.5 xbr=289.7 ybr=915.4 source=auto occluded=false
+image name=adasind_062370.jpg w=1080 h=1920 id=13
+  box label=Pedestrian    xtl=0.0 ytl=1054.1 xbr=172.0 ybr=1604.2 source=auto occluded=false
+  box label=Bike          xtl=383.5 ytl=805.6 xbr=467.6 ybr=922.8 source=auto occluded=false
+  box label=Pedestrian    xtl=394.4 ytl=748.2 xbr=470.8 ybr=878.8 source=auto occluded=false
+  box label=Pedestrian    xtl=934.4 ytl=775.5 xbr=1029.5 ybr=1094.0 source=auto occluded=false
+  box label=Truck         xtl=161.6 ytl=749.0 xbr=256.9 ybr=875.5 source=auto occluded=false
+  box label=Car           xtl=586.9 ytl=757.8 xbr=924.9 ybr=983.4 source=auto occluded=false
+  box label=Bike          xtl=487.0 ytl=787.1 xbr=528.1 ybr=856.6 source=auto occluded=false
+  box label=Truck         xtl=0.0 ytl=707.0 xbr=153.6 ybr=983.2 source=auto occluded=false
+  box label=Bike          xtl=879.0 ytl=892.2 xbr=1078.2 ybr=1068.4 source=auto occluded=false
+  box label=Truck         xtl=249.4 ytl=755.2 xbr=309.8 ybr=842.2 source=auto occluded=false
+image name=adasind_069450.jpg w=1080 h=1920 id=14
+  box label=Car           xtl=0.0 ytl=1000.1 xbr=69.2 ybr=1125.5 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1083.9 xbr=224.9 ybr=1641.4 source=auto occluded=false
+  box label=Pedestrian    xtl=708.2 ytl=849.4 xbr=730.9 ybr=904.8 source=auto occluded=false
+  box label=Pedestrian    xtl=739.8 ytl=849.4 xbr=757.0 ybr=899.6 source=auto occluded=false
+  box label=Car           xtl=341.5 ytl=883.7 xbr=382.6 ybr=907.3 source=auto occluded=false
+  box label=Truck         xtl=5.6 ytl=875.5 xbr=184.9 ybr=1061.9 source=auto occluded=false
+  box label=Pedestrian    xtl=769.2 ytl=840.3 xbr=789.0 ybr=903.3 source=auto occluded=false
+  box label=Truck         xtl=237.8 ytl=863.4 xbr=313.1 ybr=960.8 source=auto occluded=false
+image name=adasind_073020.jpg w=1080 h=1920 id=15
+  box label=Pedestrian    xtl=221.9 ytl=981.7 xbr=266.1 ybr=1106.5 source=auto occluded=false
+  box label=Bike          xtl=889.4 ytl=1041.7 xbr=1079.2 ybr=1249.6 source=auto occluded=false
+  box label=Bike          xtl=558.6 ytl=1044.2 xbr=651.3 ybr=1198.1 source=auto occluded=false
+  box label=Pedestrian    xtl=54.8 ytl=1035.9 xbr=120.5 ybr=1139.5 source=auto occluded=false
+  box label=Pedestrian    xtl=550.7 ytl=983.2 xbr=630.0 ybr=1145.4 source=auto occluded=false
+  box label=Pedestrian    xtl=157.6 ytl=985.1 xbr=203.2 ybr=1110.9 source=auto occluded=false
+  box label=Bike          xtl=760.6 ytl=1052.5 xbr=919.6 ybr=1156.1 source=auto occluded=false
+  box label=Car           xtl=352.9 ytl=980.5 xbr=463.0 ybr=1118.5 source=auto occluded=false
+  box label=Pedestrian    xtl=306.9 ytl=994.5 xbr=326.5 ybr=1072.6 source=auto occluded=false
+  box label=Truck         xtl=352.6 ytl=981.2 xbr=462.5 ybr=1119.3 source=auto occluded=false
+  box label=Pedestrian    xtl=125.9 ytl=989.0 xbr=157.5 ybr=1089.1 source=auto occluded=false
+  box label=Bike          xtl=264.3 ytl=1031.3 xbr=300.6 ybr=1090.1 source=auto occluded=false
+  box label=Bike          xtl=191.6 ytl=1035.4 xbr=236.9 ybr=1095.5 source=auto occluded=false
+  box label=Pedestrian    xtl=665.4 ytl=1018.6 xbr=691.7 ybr=1090.1 source=auto occluded=false
+  box label=Car           xtl=509.4 ytl=998.1 xbr=580.1 ybr=1090.5 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1211.0 xbr=283.1 ybr=1481.3 source=auto occluded=false
+image name=adasind_074520.jpg w=1080 h=1920 id=16
+  box label=Car           xtl=865.2 ytl=952.4 xbr=1080.0 ybr=1096.0 source=auto occluded=false
+  box label=Pedestrian    xtl=1.3 ytl=871.0 xbr=79.1 ybr=1055.0 source=auto occluded=false
+  box label=Pedestrian    xtl=543.9 ytl=929.7 xbr=606.0 ybr=1057.0 source=auto occluded=false
+  box label=Pedestrian    xtl=135.7 ytl=853.3 xbr=246.8 ybr=1081.7 source=auto occluded=false
+  box label=Bike          xtl=121.8 ytl=960.9 xbr=238.2 ybr=1150.0 source=auto occluded=false
+  box label=Bike          xtl=967.7 ytl=1029.6 xbr=1079.8 ybr=1132.3 source=auto occluded=false
+  box label=Bike          xtl=53.4 ytl=937.8 xbr=134.5 ybr=1012.2 source=auto occluded=false
+  box label=Car           xtl=808.5 ytl=947.4 xbr=895.5 ybr=1043.2 source=auto occluded=false
+  box label=Truck         xtl=284.5 ytl=901.4 xbr=394.5 ybr=1031.4 source=auto occluded=false
+  box label=Car           xtl=856.3 ytl=950.6 xbr=1009.7 ybr=1049.4 source=auto occluded=false
+  box label=Truck         xtl=448.7 ytl=920.9 xbr=486.8 ybr=967.0 source=auto occluded=false
+  box label=Car           xtl=666.4 ytl=938.1 xbr=840.5 ybr=1106.2 source=auto occluded=false
+  box label=Pedestrian    xtl=61.6 ytl=893.4 xbr=88.6 ybr=943.9 source=auto occluded=false
+  box label=Car           xtl=392.9 ytl=925.4 xbr=444.4 ybr=988.8 source=auto occluded=false
+  box label=Truck         xtl=392.6 ytl=924.7 xbr=444.9 ybr=988.5 source=auto occluded=false
+  box label=Truck         xtl=604.0 ytl=939.9 xbr=672.7 ybr=1031.5 source=auto occluded=false
+  box label=Car           xtl=491.3 ytl=929.9 xbr=530.9 ybr=976.8 source=auto occluded=false
+  box label=Car           xtl=0.0 ytl=1050.4 xbr=118.4 ybr=1220.0 source=auto occluded=false
+  box label=Car           xtl=490.9 ytl=946.3 xbr=527.6 ybr=976.7 source=auto occluded=false
+  box label=Pedestrian    xtl=477.6 ytl=943.6 xbr=494.3 ybr=982.7 source=auto occluded=false
+  box label=Car           xtl=604.1 ytl=940.6 xbr=672.2 ybr=1030.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1170.1 xbr=239.9 ybr=1671.0 source=auto occluded=false
+  box label=Pedestrian    xtl=0.4 ytl=1168.6 xbr=215.4 ybr=1402.2 source=auto occluded=false
+  box label=Pedestrian    xtl=520.5 ytl=946.0 xbr=541.0 ybr=992.6 source=auto occluded=false
+  box label=Pedestrian    xtl=658.2 ytl=944.9 xbr=693.4 ybr=1051.8 source=auto occluded=false
+  box label=Pedestrian    xtl=0.1 ytl=897.8 xbr=14.9 ybr=946.5 source=auto occluded=false
+image name=adasind_082170.jpg w=1080 h=1920 id=17
+  box label=Bike          xtl=524.6 ytl=1036.5 xbr=586.7 ybr=1082.8 source=auto occluded=false
+  box label=Pedestrian    xtl=279.0 ytl=1032.1 xbr=311.7 ybr=1099.0 source=auto occluded=false
+  box label=Bike          xtl=849.0 ytl=1019.1 xbr=911.7 ybr=1098.6 source=auto occluded=false
+  box label=Car           xtl=367.3 ytl=1030.7 xbr=388.5 ybr=1051.9 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1148.2 xbr=344.4 ybr=1683.7 source=auto occluded=false
+  box label=Truck         xtl=175.5 ytl=1025.3 xbr=267.6 ybr=1128.2 source=auto occluded=false
+  box label=Pedestrian    xtl=542.8 ytl=1020.2 xbr=571.6 ybr=1069.8 source=auto occluded=false
+  box label=Truck         xtl=704.1 ytl=985.1 xbr=854.3 ybr=1121.8 source=auto occluded=false
+  box label=Bike          xtl=44.3 ytl=1205.3 xbr=231.2 ybr=1416.2 source=auto occluded=false
+  box label=Pedestrian    xtl=1001.8 ytl=873.2 xbr=1046.8 ybr=917.4 source=auto occluded=false
+  box label=Car           xtl=397.4 ytl=1028.8 xbr=418.0 ybr=1048.5 source=auto occluded=false
+  box label=Car           xtl=316.5 ytl=1034.3 xbr=369.9 ybr=1067.5 source=auto occluded=false
+  box label=Bike          xtl=72.8 ytl=1076.3 xbr=157.0 ybr=1149.1 source=auto occluded=false
+image name=adasind_086220.jpg w=1080 h=1920 id=18
+  box label=Bike          xtl=424.2 ytl=983.2 xbr=553.5 ybr=1198.0 source=auto occluded=false
+  box label=Pedestrian    xtl=429.0 ytl=919.7 xbr=552.2 ybr=1130.3 source=auto occluded=false
+  box label=Pedestrian    xtl=361.9 ytl=962.3 xbr=394.5 ybr=1038.8 source=auto occluded=false
+  box label=Bike          xtl=363.4 ytl=998.2 xbr=396.7 ybr=1056.8 source=auto occluded=false
+  box label=Truck         xtl=660.8 ytl=868.6 xbr=1079.9 ybr=1288.6 source=auto occluded=false
+  box label=Bike          xtl=316.9 ytl=994.7 xbr=360.0 ybr=1028.1 source=auto occluded=false
+  box label=Car           xtl=404.0 ytl=982.2 xbr=440.0 ybr=1017.6 source=auto occluded=false
+  box label=Car           xtl=660.5 ytl=870.8 xbr=1079.2 ybr=1289.0 source=auto occluded=false
+  box label=Car           xtl=246.3 ytl=971.8 xbr=270.1 ybr=991.1 source=auto occluded=false
+  box label=Car           xtl=37.8 ytl=963.5 xbr=99.9 ybr=1010.0 source=auto occluded=false
+  box label=Car           xtl=321.0 ytl=962.3 xbr=376.7 ybr=1022.0 source=auto occluded=false
+image name=adasind_091830.jpg w=1080 h=1920 id=19
+  box label=Pedestrian    xtl=0.0 ytl=1195.9 xbr=214.8 ybr=1765.3 source=auto occluded=false
+  box label=Bike          xtl=11.4 ytl=890.7 xbr=161.7 ybr=994.2 source=auto occluded=false
+  box label=Pedestrian    xtl=138.8 ytl=860.6 xbr=201.9 ybr=1014.4 source=auto occluded=false
+  box label=Pedestrian    xtl=191.1 ytl=870.5 xbr=249.8 ybr=1012.4 source=auto occluded=false
+  box label=Truck         xtl=512.3 ytl=871.8 xbr=606.8 ybr=959.5 source=auto occluded=false
+  box label=Pedestrian    xtl=291.7 ytl=886.3 xbr=310.1 ybr=944.9 source=auto occluded=false
+  box label=Bike          xtl=347.9 ytl=905.7 xbr=376.4 ybr=932.5 source=auto occluded=false
+  box label=Pedestrian    xtl=323.1 ytl=889.8 xbr=341.5 ybr=927.3 source=auto occluded=false
+  box label=Car           xtl=489.4 ytl=892.6 xbr=516.6 ybr=926.0 source=auto occluded=false
+  box label=Car           xtl=433.9 ytl=885.8 xbr=468.2 ybr=912.9 source=auto occluded=false
+  box label=Bike          xtl=1046.7 ytl=932.9 xbr=1077.3 ybr=1004.2 source=auto occluded=false
+  box label=Pedestrian    xtl=921.0 ytl=930.8 xbr=938.9 ybr=981.3 source=auto occluded=false
+image name=adasind_098190.jpg w=1080 h=1920 id=20
+  box label=Truck         xtl=87.0 ytl=844.7 xbr=464.8 ybr=1138.8 source=auto occluded=false
+  box label=Pedestrian    xtl=768.5 ytl=849.6 xbr=835.1 ybr=1075.4 source=auto occluded=false
+  box label=Pedestrian    xtl=900.2 ytl=832.3 xbr=966.3 ybr=1128.4 source=auto occluded=false
+  box label=Pedestrian    xtl=843.9 ytl=838.7 xbr=917.3 ybr=1094.3 source=auto occluded=false
+  box label=Pedestrian    xtl=55.8 ytl=935.5 xbr=99.3 ybr=1046.5 source=auto occluded=false
+  box label=Bike          xtl=0.3 ytl=1006.4 xbr=65.0 ybr=1098.6 source=auto occluded=false
+  box label=Pedestrian    xtl=935.1 ytl=833.7 xbr=979.3 ybr=1108.6 source=auto occluded=false
+  box label=Truck         xtl=476.6 ytl=772.1 xbr=681.9 ybr=1044.5 source=auto occluded=false
+  box label=Car           xtl=675.6 ytl=892.0 xbr=863.6 ybr=1039.0 source=auto occluded=false
+  box label=Bike          xtl=845.7 ytl=923.3 xbr=1027.1 ybr=1092.4 source=auto occluded=false
+  box label=Car           xtl=675.6 ytl=892.5 xbr=781.0 ybr=1021.4 source=auto occluded=false
+  box label=Bike          xtl=972.0 ytl=995.0 xbr=1026.8 ybr=1092.0 source=auto occluded=false
+  box label=Truck         xtl=479.4 ytl=853.8 xbr=681.6 ybr=1044.3 source=auto occluded=false
+  box label=Bike          xtl=827.3 ytl=938.1 xbr=868.8 ybr=1063.8 source=auto occluded=false
+  box label=Pedestrian    xtl=90.5 ytl=990.4 xbr=107.4 ybr=1032.5 source=auto occluded=false
+image name=adasind_102750.jpg w=1080 h=1920 id=21
+  box label=Truck         xtl=855.0 ytl=913.6 xbr=1080.0 ybr=1155.9 source=auto occluded=false
+  box label=Truck         xtl=0.1 ytl=846.3 xbr=89.7 ybr=961.8 source=auto occluded=false
+  box label=Car           xtl=117.2 ytl=891.8 xbr=169.0 ybr=948.1 source=auto occluded=false
+  box label=Truck         xtl=208.7 ytl=900.1 xbr=255.6 ybr=961.8 source=auto occluded=false
+  box label=Car           xtl=33.8 ytl=93.3 xbr=1064.0 ybr=1002.7 source=auto occluded=false
+  box label=Truck         xtl=423.6 ytl=937.2 xbr=458.9 ybr=981.6 source=auto occluded=false
+  box label=Car           xtl=333.0 ytl=915.8 xbr=365.8 ybr=953.3 source=auto occluded=false
+  box label=Car           xtl=172.4 ytl=891.3 xbr=212.3 ybr=939.3 source=auto occluded=false
+  box label=Truck         xtl=332.6 ytl=912.5 xbr=366.1 ybr=953.1 source=auto occluded=false
+image name=adasind_117120.jpg w=1080 h=1920 id=22
+  box label=Truck         xtl=478.4 ytl=870.9 xbr=632.6 ybr=998.5 source=auto occluded=false
+  box label=Bike          xtl=95.2 ytl=947.5 xbr=201.6 ybr=1026.2 source=auto occluded=false
+  box label=Car           xtl=191.2 ytl=926.4 xbr=283.6 ybr=997.5 source=auto occluded=false
+  box label=Pedestrian    xtl=692.8 ytl=884.0 xbr=731.0 ybr=972.9 source=auto occluded=false
+  box label=Car           xtl=322.1 ytl=917.9 xbr=352.8 ybr=951.0 source=auto occluded=false
+  box label=Car           xtl=390.3 ytl=921.9 xbr=415.9 ybr=943.7 source=auto occluded=false
+  box label=Car           xtl=350.2 ytl=920.4 xbr=393.4 ybr=960.7 source=auto occluded=false
+  box label=Pedestrian    xtl=119.9 ytl=919.3 xbr=176.7 ybr=1023.1 source=auto occluded=false
+  box label=Truck         xtl=726.0 ytl=870.2 xbr=853.4 ybr=983.4 source=auto occluded=false
+  box label=Car           xtl=420.2 ytl=893.7 xbr=462.7 ybr=942.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.3 ytl=1116.9 xbr=332.9 ybr=1728.9 source=auto occluded=false
+  box label=Truck         xtl=420.4 ytl=893.7 xbr=462.4 ybr=942.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1051.4 xbr=296.7 ybr=1521.4 source=auto occluded=false
+image name=adasind_117210.jpg w=1080 h=1920 id=23
+  box label=Truck         xtl=416.7 ytl=882.3 xbr=537.0 ybr=1000.9 source=auto occluded=false
+  box label=Pedestrian    xtl=34.7 ytl=959.5 xbr=60.4 ybr=1039.2 source=auto occluded=false
+  box label=Car           xtl=313.8 ytl=937.9 xbr=368.0 ybr=994.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=954.1 xbr=26.1 ybr=1080.3 source=auto occluded=false
+  box label=Pedestrian    xtl=629.5 ytl=930.9 xbr=648.7 ybr=990.4 source=auto occluded=false
+  box label=Pedestrian    xtl=98.5 ytl=960.8 xbr=122.5 ybr=1013.7 source=auto occluded=false
+  box label=Bike          xtl=914.6 ytl=956.8 xbr=1039.9 ybr=1027.8 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1215.9 xbr=233.7 ybr=1531.3 source=auto occluded=false
+  box label=Car           xtl=211.8 ytl=935.1 xbr=289.4 ybr=1010.7 source=auto occluded=false
+  box label=Bike          xtl=828.3 ytl=950.5 xbr=912.8 ybr=1018.0 source=auto occluded=false
+  box label=Pedestrian    xtl=140.2 ytl=947.8 xbr=160.8 ybr=998.1 source=auto occluded=false
+  box label=Truck         xtl=211.8 ytl=935.1 xbr=289.5 ybr=1010.7 source=auto occluded=false
+  box label=Truck         xtl=1039.2 ytl=892.2 xbr=1079.8 ybr=1045.9 source=auto occluded=false
+  box label=Bike          xtl=578.2 ytl=948.2 xbr=631.1 ybr=997.0 source=auto occluded=false
+  box label=Pedestrian    xtl=63.1 ytl=964.0 xbr=72.8 ybr=1003.0 source=auto occluded=false
+  box label=Car           xtl=653.4 ytl=924.2 xbr=747.1 ybr=987.8 source=auto occluded=false
+  box label=Car           xtl=370.1 ytl=936.3 xbr=410.9 ybr=974.1 source=auto occluded=false
+  box label=Pedestrian    xtl=21.7 ytl=960.5 xbr=40.5 ybr=1035.8 source=auto occluded=false
+  box label=Bike          xtl=716.4 ytl=949.7 xbr=822.0 ybr=1013.9 source=auto occluded=false
+  box label=Bike          xtl=607.3 ytl=948.3 xbr=631.7 ybr=997.7 source=auto occluded=false
+  box label=Truck         xtl=365.8 ytl=919.8 xbr=410.9 ybr=973.5 source=auto occluded=false
+  box label=Pedestrian    xtl=86.4 ytl=962.2 xbr=99.1 ybr=1001.4 source=auto occluded=false
+  box label=Bike          xtl=892.6 ytl=956.5 xbr=964.6 ybr=1021.5 source=auto occluded=false
+  box label=Car           xtl=533.8 ytl=936.0 xbr=561.9 ybr=978.1 source=auto occluded=false
+image name=adasind_123090.jpg w=1080 h=1920 id=24
+  box label=Car           xtl=392.1 ytl=939.4 xbr=594.0 ybr=1093.5 source=auto occluded=false
+  box label=Truck         xtl=0.1 ytl=943.7 xbr=96.9 ybr=1050.3 source=auto occluded=false
+  box label=Pedestrian    xtl=183.0 ytl=952.8 xbr=249.7 ybr=1064.8 source=auto occluded=false
+  box label=Bike          xtl=189.4 ytl=1006.9 xbr=249.2 ybr=1093.0 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1227.7 xbr=137.9 ybr=1550.9 source=auto occluded=false
+  box label=Pedestrian    xtl=183.9 ytl=952.7 xbr=246.4 ybr=1036.3 source=auto occluded=false
+image name=adasind_128310.jpg w=1080 h=1920 id=25
+  box label=Pedestrian    xtl=7.2 ytl=888.4 xbr=102.9 ybr=1097.5 source=auto occluded=false
+  box label=Car           xtl=341.5 ytl=938.6 xbr=400.3 ybr=1001.2 source=auto occluded=false
+  box label=Truck         xtl=194.9 ytl=886.2 xbr=290.2 ybr=980.3 source=auto occluded=false
+  box label=Truck         xtl=703.8 ytl=877.7 xbr=878.3 ybr=1073.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1111.5 xbr=231.1 ybr=1716.0 source=auto occluded=false
+  box label=Car           xtl=422.2 ytl=925.9 xbr=475.9 ybr=990.4 source=auto occluded=false
+image name=adasind_140160.jpg w=1080 h=1920 id=26
+  box label=Pedestrian    xtl=990.0 ytl=814.8 xbr=1080.0 ybr=1032.0 source=auto occluded=false
+  box label=Bike          xtl=944.6 ytl=928.7 xbr=1080.0 ybr=1056.5 source=auto occluded=false
+  box label=Car           xtl=335.4 ytl=837.6 xbr=396.9 ybr=903.0 source=auto occluded=false
+  box label=Truck         xtl=230.7 ytl=824.9 xbr=277.4 ybr=879.0 source=auto occluded=false
+  box label=Truck         xtl=334.9 ytl=837.7 xbr=397.7 ybr=903.3 source=auto occluded=false
+  box label=Bus           xtl=226.7 ytl=824.6 xbr=277.4 ybr=878.5 source=auto occluded=false
+image name=adasind_145860.jpg w=1080 h=1920 id=27
+  box label=Truck         xtl=397.7 ytl=801.1 xbr=483.3 ybr=909.3 source=auto occluded=false
+  box label=Car           xtl=43.1 ytl=862.5 xbr=151.5 ybr=945.4 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1040.1 xbr=204.8 ybr=1662.8 source=auto occluded=false
+  box label=Truck         xtl=238.8 ytl=855.8 xbr=283.5 ybr=911.3 source=auto occluded=false
+image name=adasind_152940.jpg w=1080 h=1920 id=28
+  box label=Bike          xtl=862.5 ytl=897.0 xbr=1080.0 ybr=1129.3 source=auto occluded=false
+  box label=Bike          xtl=579.0 ytl=846.3 xbr=665.8 ybr=925.2 source=auto occluded=false
+  box label=Pedestrian    xtl=933.8 ytl=766.7 xbr=1079.0 ybr=1069.2 source=auto occluded=false
+  box label=Pedestrian    xtl=867.8 ytl=770.6 xbr=956.7 ybr=1013.6 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1070.5 xbr=135.6 ybr=1669.2 source=auto occluded=false
+  box label=Pedestrian    xtl=251.4 ytl=817.6 xbr=268.8 ybr=851.9 source=auto occluded=false
+  box label=Bike          xtl=430.3 ytl=834.8 xbr=492.1 ybr=915.9 source=auto occluded=false
+  box label=Pedestrian    xtl=431.8 ytl=799.7 xbr=490.2 ybr=891.4 source=auto occluded=false
+  box label=Car           xtl=327.5 ytl=809.7 xbr=390.7 ybr=863.1 source=auto occluded=false
+  box label=Truck         xtl=143.3 ytl=791.8 xbr=193.2 ybr=858.9 source=auto occluded=false
+  box label=Truck         xtl=188.7 ytl=814.0 xbr=215.6 ybr=848.6 source=auto occluded=false
+image name=adasind_167700.jpg w=1080 h=1920 id=29
+  box label=Pedestrian    xtl=351.4 ytl=877.8 xbr=485.0 ybr=1209.8 source=auto occluded=false
+  box label=Pedestrian    xtl=910.4 ytl=727.2 xbr=1080.0 ybr=1412.4 source=auto occluded=false
+  box label=Pedestrian    xtl=264.0 ytl=927.0 xbr=330.2 ybr=1101.6 source=auto occluded=false
+  box label=Car           xtl=578.2 ytl=877.6 xbr=701.1 ybr=993.5 source=auto occluded=false
+  box label=Bike          xtl=313.2 ytl=1011.6 xbr=352.2 ybr=1111.6 source=auto occluded=false
+  box label=Bike          xtl=426.9 ytl=972.8 xbr=601.2 ybr=1186.3 source=auto occluded=false
+  box label=Bike          xtl=754.9 ytl=1078.7 xbr=954.3 ybr=1289.3 source=auto occluded=false
+  box label=Truck         xtl=23.1 ytl=920.8 xbr=267.2 ybr=1178.2 source=auto occluded=false
+  box label=Truck         xtl=551.7 ytl=870.8 xbr=597.3 ybr=937.3 source=auto occluded=false
+image name=adasind_184050.jpg w=1080 h=1920 id=30
+  box label=Pedestrian    xtl=738.7 ytl=704.1 xbr=848.7 ybr=975.3 source=auto occluded=false
+  box label=Car           xtl=173.8 ytl=759.6 xbr=239.3 ybr=822.8 source=auto occluded=false
+  box label=Truck         xtl=173.2 ytl=758.5 xbr=239.3 ybr=822.7 source=auto occluded=false
+image name=adasind_199770.jpg w=1080 h=1920 id=31
+  box label=Pedestrian    xtl=617.5 ytl=832.3 xbr=701.8 ybr=1021.8 source=auto occluded=false
+  box label=Pedestrian    xtl=954.9 ytl=1281.8 xbr=1080.0 ybr=1557.7 source=auto occluded=false
+  box label=Bike          xtl=534.7 ytl=886.7 xbr=651.9 ybr=999.9 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=987.5 xbr=140.2 ybr=1576.7 source=auto occluded=false
+  box label=Bike          xtl=76.6 ytl=831.8 xbr=146.6 ybr=903.7 source=auto occluded=false
+  box label=Car           xtl=223.0 ytl=813.8 xbr=274.4 ybr=860.9 source=auto occluded=false
+  box label=Truck         xtl=925.4 ytl=817.5 xbr=1080.0 ybr=1306.6 source=auto occluded=false
+  box label=Car           xtl=0.0 ytl=783.1 xbr=81.7 ybr=935.1 source=auto occluded=false
+  box label=Pedestrian    xtl=351.8 ytl=830.2 xbr=367.2 ybr=886.0 source=auto occluded=false
+  box label=Pedestrian    xtl=847.9 ytl=851.4 xbr=899.2 ybr=947.5 source=auto occluded=false
+  box label=Pedestrian    xtl=204.1 ytl=828.0 xbr=215.6 ybr=858.0 source=auto occluded=false
+  box label=Pedestrian    xtl=676.1 ytl=835.4 xbr=705.7 ybr=914.7 source=auto occluded=false
+  box label=Car           xtl=372.8 ytl=808.9 xbr=530.1 ybr=947.1 source=auto occluded=false
+  box label=Pedestrian    xtl=752.3 ytl=849.7 xbr=775.9 ybr=923.3 source=auto occluded=false
+image name=adasind_212280.jpg w=1080 h=1920 id=32
+  box label=Bike          xtl=304.5 ytl=912.8 xbr=368.9 ybr=1045.6 source=auto occluded=false
+  box label=Bike          xtl=464.2 ytl=917.8 xbr=611.4 ybr=1058.7 source=auto occluded=false
+  box label=Pedestrian    xtl=298.6 ytl=847.3 xbr=349.2 ybr=1003.8 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1081.3 xbr=185.7 ybr=1692.2 source=auto occluded=false
+  box label=Truck         xtl=0.0 ytl=766.3 xbr=136.2 ybr=1101.9 source=auto occluded=false
+  box label=Car           xtl=0.0 ytl=764.3 xbr=136.4 ybr=1101.3 source=auto occluded=false
+  box label=Car           xtl=160.0 ytl=884.9 xbr=179.9 ybr=913.1 source=auto occluded=false
+  box label=Car           xtl=0.0 ytl=1078.9 xbr=104.7 ybr=1352.0 source=auto occluded=false
+image name=adasind_212700.jpg w=1080 h=1920 id=33
+  box label=Pedestrian    xtl=0.5 ytl=874.2 xbr=61.4 ybr=1063.3 source=auto occluded=false
+  box label=Pedestrian    xtl=942.4 ytl=832.8 xbr=1080.0 ybr=1151.5 source=auto occluded=false
+  box label=Bike          xtl=0.1 ytl=993.1 xbr=48.6 ybr=1100.1 source=auto occluded=false
+  box label=Car           xtl=215.3 ytl=637.7 xbr=1080.0 ybr=1595.1 source=auto occluded=false
+  box label=Car           xtl=134.3 ytl=560.2 xbr=1075.8 ybr=1413.2 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1151.9 xbr=145.2 ybr=1621.2 source=auto occluded=false
+  box label=Car           xtl=24.2 ytl=164.4 xbr=1046.1 ybr=1008.7 source=auto occluded=false
+  box label=Truck         xtl=35.8 ytl=910.7 xbr=87.3 ybr=1009.5 source=auto occluded=false
+  box label=Car           xtl=36.8 ytl=910.1 xbr=87.0 ybr=1009.7 source=auto occluded=false
+image name=adasind_223530.jpg w=1080 h=1920 id=34
+  box label=Pedestrian    xtl=824.2 ytl=691.6 xbr=913.8 ybr=783.2 source=auto occluded=false
+  box label=Truck         xtl=447.6 ytl=529.5 xbr=1079.0 ybr=1165.7 source=auto occluded=false
+  box label=Pedestrian    xtl=52.0 ytl=743.5 xbr=66.1 ybr=770.1 source=auto occluded=false
+  box label=Truck         xtl=0.1 ytl=735.4 xbr=33.2 ybr=802.7 source=auto occluded=false
+  box label=Pedestrian    xtl=106.1 ytl=738.5 xbr=121.3 ybr=766.1 source=auto occluded=false
+image name=adasind_230910.jpg w=1080 h=1920 id=35
+  box label=Bike          xtl=951.0 ytl=939.7 xbr=1079.9 ybr=1117.5 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1125.7 xbr=243.3 ybr=1699.7 source=auto occluded=false
+  box label=Car           xtl=300.3 ytl=922.6 xbr=349.3 ybr=971.0 source=auto occluded=false
+  box label=Pedestrian    xtl=973.6 ytl=830.3 xbr=1012.9 ybr=947.3 source=auto occluded=false
+  box label=Pedestrian    xtl=397.8 ytl=903.1 xbr=420.2 ybr=979.9 source=auto occluded=false
+  box label=Truck         xtl=0.0 ytl=876.5 xbr=93.3 ybr=1069.0 source=auto occluded=false
+  box label=Pedestrian    xtl=354.2 ytl=906.6 xbr=383.7 ybr=988.6 source=auto occluded=false
+  box label=Truck         xtl=118.4 ytl=912.7 xbr=210.6 ybr=1024.8 source=auto occluded=false
+  box label=Truck         xtl=210.1 ytl=898.4 xbr=285.5 ybr=992.8 source=auto occluded=false
+  box label=Pedestrian    xtl=787.0 ytl=852.6 xbr=815.9 ybr=915.8 source=auto occluded=false
+image name=adasind_236370.jpg w=1080 h=1920 id=36
+  box label=Bike          xtl=594.5 ytl=833.7 xbr=882.6 ybr=1027.8 source=auto occluded=false
+  box label=Pedestrian    xtl=665.6 ytl=727.1 xbr=778.9 ybr=1008.2 source=auto occluded=false
+  box label=Truck         xtl=403.8 ytl=653.3 xbr=770.6 ybr=924.2 source=auto occluded=false
+  box label=Pedestrian    xtl=845.1 ytl=762.6 xbr=913.0 ybr=1021.1 source=auto occluded=false
+  box label=Pedestrian    xtl=64.6 ytl=731.7 xbr=89.4 ybr=796.0 source=auto occluded=false
+  box label=Car           xtl=0.0 ytl=728.3 xbr=56.6 ybr=786.7 source=auto occluded=false
+  box label=Pedestrian    xtl=294.2 ytl=733.7 xbr=324.9 ybr=844.3 source=auto occluded=false
+  box label=Bike          xtl=891.5 ytl=870.5 xbr=1018.0 ybr=1018.9 source=auto occluded=false
+  box label=Pedestrian    xtl=0.1 ytl=1283.5 xbr=106.8 ybr=1535.6 source=auto occluded=false
+image name=adasind_249480.jpg w=1080 h=1920 id=37
+  box label=Bike          xtl=608.0 ytl=783.7 xbr=825.6 ybr=998.3 source=auto occluded=false
+  box label=Pedestrian    xtl=663.8 ytl=717.1 xbr=766.6 ybr=945.7 source=auto occluded=false
+  box label=Car           xtl=0.6 ytl=762.8 xbr=71.1 ybr=794.1 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=975.4 xbr=162.6 ybr=1642.4 source=auto occluded=false
+  box label=Car           xtl=72.5 ytl=755.9 xbr=105.7 ybr=779.6 source=auto occluded=false
+  box label=Pedestrian    xtl=623.1 ytl=718.5 xbr=682.0 ybr=894.6 source=auto occluded=false
+  box label=Truck         xtl=162.7 ytl=714.6 xbr=241.9 ybr=809.7 source=auto occluded=false
+  box label=Pedestrian    xtl=161.9 ytl=679.4 xbr=228.9 ybr=746.0 source=auto occluded=false
+  box label=Car           xtl=119.7 ytl=753.8 xbr=135.6 ybr=773.2 source=auto occluded=false
+image name=adasind_254250.jpg w=1080 h=1920 id=38
+  box label=Car           xtl=283.7 ytl=784.5 xbr=348.5 ybr=844.2 source=auto occluded=false
+  box label=Car           xtl=0.3 ytl=812.4 xbr=58.0 ybr=888.1 source=auto occluded=false
+  box label=Car           xtl=342.6 ytl=769.5 xbr=438.5 ybr=868.2 source=auto occluded=false
+  box label=Pedestrian    xtl=479.1 ytl=794.8 xbr=505.0 ybr=874.9 source=auto occluded=false
+  box label=Car           xtl=251.6 ytl=790.2 xbr=298.2 ybr=831.5 source=auto occluded=false
+  box label=Pedestrian    xtl=528.8 ytl=765.8 xbr=554.7 ybr=867.1 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1027.8 xbr=184.0 ybr=1641.0 source=auto occluded=false
+  box label=Car           xtl=152.9 ytl=799.8 xbr=177.6 ybr=861.9 source=auto occluded=false
+  box label=Car           xtl=60.8 ytl=770.0 xbr=163.9 ybr=905.1 source=auto occluded=false
+  box label=Pedestrian    xtl=419.1 ytl=778.8 xbr=471.3 ybr=879.3 source=auto occluded=false
+  box label=Car           xtl=34.1 ytl=806.2 xbr=66.0 ybr=855.7 source=auto occluded=false
+  box label=Bike          xtl=195.3 ytl=808.1 xbr=211.4 ybr=829.2 source=auto occluded=false
+  box label=Car           xtl=211.9 ytl=793.7 xbr=237.0 ybr=819.9 source=auto occluded=false
+  box label=Truck         xtl=60.6 ytl=769.8 xbr=164.1 ybr=904.5 source=auto occluded=false
+image name=adasind_258420.jpg w=1080 h=1920 id=39
+  box label=Pedestrian    xtl=0.0 ytl=1008.8 xbr=206.8 ybr=1657.1 source=auto occluded=false
+  box label=Pedestrian    xtl=70.4 ytl=800.5 xbr=96.1 ybr=866.8 source=auto occluded=false
+  box label=Bike          xtl=126.1 ytl=825.8 xbr=152.4 ybr=867.0 source=auto occluded=false
+  box label=Truck         xtl=8.1 ytl=798.0 xbr=68.8 ybr=874.0 source=auto occluded=false
+  box label=Pedestrian    xtl=128.3 ytl=797.4 xbr=157.1 ybr=852.4 source=auto occluded=false
+  box label=Car           xtl=214.7 ytl=773.8 xbr=275.2 ybr=814.1 source=auto occluded=false
+  box label=Pedestrian    xtl=235.1 ytl=792.9 xbr=257.4 ybr=843.8 source=auto occluded=false
+  box label=Truck         xtl=285.2 ytl=761.9 xbr=454.8 ybr=945.6 source=auto occluded=false
+  box label=Bike          xtl=197.2 ytl=826.2 xbr=247.4 ybr=908.6 source=auto occluded=false
+  box label=Pedestrian    xtl=190.1 ytl=791.5 xbr=242.0 ybr=883.2 source=auto occluded=false
+  box label=Car           xtl=609.8 ytl=777.7 xbr=836.9 ybr=974.8 source=auto occluded=false
+  box label=Pedestrian    xtl=91.3 ytl=794.0 xbr=109.8 ybr=843.6 source=auto occluded=false
+image name=adasind_261480.jpg w=1080 h=1920 id=40
+  box label=Car           xtl=508.1 ytl=690.0 xbr=837.5 ybr=902.2 source=auto occluded=false
+  box label=Pedestrian    xtl=764.6 ytl=593.6 xbr=1080.0 ybr=1278.8 source=auto occluded=false
+  box label=Car           xtl=126.2 ytl=745.9 xbr=268.8 ybr=881.3 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1382.9 xbr=305.3 ybr=1774.1 source=auto occluded=false
+  box label=Pedestrian    xtl=0.7 ytl=754.6 xbr=61.1 ybr=872.9 source=auto occluded=false
+  box label=Car           xtl=94.9 ytl=764.2 xbr=136.2 ybr=842.5 source=auto occluded=false
+  box label=Bike          xtl=1.6 ytl=830.3 xbr=65.3 ybr=928.7 source=auto occluded=false
+  box label=Car           xtl=72.3 ytl=778.5 xbr=98.2 ybr=825.0 source=auto occluded=false
+  box label=Bike          xtl=652.1 ytl=879.7 xbr=1080.0 ybr=1357.8 source=auto occluded=false
+  box label=Car           xtl=251.9 ytl=745.8 xbr=335.9 ybr=855.7 source=auto occluded=false
+  box label=Bike          xtl=41.6 ytl=807.6 xbr=69.5 ybr=867.9 source=auto occluded=false
+  box label=Truck         xtl=252.4 ytl=745.9 xbr=336.1 ybr=854.9 source=auto occluded=false
+  box label=Bike          xtl=645.7 ytl=838.2 xbr=1080.0 ybr=1220.2 source=auto occluded=false
+image name=adasind_265065.jpg w=1080 h=1920 id=41
+  box label=Truck         xtl=181.3 ytl=721.1 xbr=282.5 ybr=849.9 source=auto occluded=false
+  box label=Pedestrian    xtl=837.6 ytl=772.2 xbr=898.8 ybr=908.8 source=auto occluded=false
+  box label=Pedestrian    xtl=780.8 ytl=751.9 xbr=821.6 ybr=866.9 source=auto occluded=false
+  box label=Bike          xtl=296.8 ytl=807.7 xbr=399.3 ybr=872.5 source=auto occluded=false
+  box label=Pedestrian    xtl=745.5 ytl=761.7 xbr=771.4 ybr=848.6 source=auto occluded=false
+  box label=Pedestrian    xtl=145.3 ytl=761.0 xbr=164.2 ybr=826.8 source=auto occluded=false
+  box label=Pedestrian    xtl=280.3 ytl=763.6 xbr=299.9 ybr=799.1 source=auto occluded=false
+  box label=Bike          xtl=157.8 ytl=773.8 xbr=191.5 ybr=830.7 source=auto occluded=false
+  box label=Bike          xtl=157.7 ytl=788.2 xbr=188.5 ybr=830.6 source=auto occluded=false
+image name=adasind_270517.jpg w=1080 h=1920 id=42
+  box label=Car           xtl=41.8 ytl=766.1 xbr=121.2 ybr=840.3 source=auto occluded=false
+  box label=Bike          xtl=1024.3 ytl=962.1 xbr=1080.0 ybr=1174.0 source=auto occluded=false
+  box label=Car           xtl=272.2 ytl=755.0 xbr=351.9 ybr=829.3 source=auto occluded=false
+  box label=Pedestrian    xtl=329.9 ytl=747.6 xbr=408.9 ybr=906.4 source=auto occluded=false
+  box label=Pedestrian    xtl=673.2 ytl=761.2 xbr=790.0 ybr=858.6 source=auto occluded=false
+  box label=Car           xtl=170.0 ytl=735.7 xbr=269.1 ybr=883.3 source=auto occluded=false
+  box label=Car           xtl=449.7 ytl=716.0 xbr=822.2 ybr=1021.4 source=auto occluded=false
+  box label=Bike          xtl=811.0 ytl=847.1 xbr=878.1 ybr=914.0 source=auto occluded=false
+  box label=Truck         xtl=169.6 ytl=735.3 xbr=269.3 ybr=883.2 source=auto occluded=false
+  box label=Pedestrian    xtl=672.8 ytl=760.9 xbr=793.1 ybr=949.6 source=auto occluded=false
+  box label=Pedestrian    xtl=652.6 ytl=761.7 xbr=681.4 ybr=840.2 source=auto occluded=false
+image name=adasind_271039.jpg w=1080 h=1920 id=43
+  box label=Car           xtl=443.3 ytl=818.4 xbr=814.8 ybr=1018.7 source=auto occluded=false
+  box label=Pedestrian    xtl=315.2 ytl=811.3 xbr=360.1 ybr=937.0 source=auto occluded=false
+  box label=Pedestrian    xtl=280.2 ytl=815.2 xbr=312.7 ybr=933.4 source=auto occluded=false
+  box label=Pedestrian    xtl=989.9 ytl=837.9 xbr=1028.7 ybr=969.2 source=auto occluded=false
+  box label=Pedestrian    xtl=222.5 ytl=824.0 xbr=250.3 ybr=906.3 source=auto occluded=false
+  box label=Car           xtl=26.4 ytl=816.5 xbr=98.0 ybr=906.6 source=auto occluded=false
+  box label=Pedestrian    xtl=392.2 ytl=820.7 xbr=438.9 ybr=934.1 source=auto occluded=false
+  box label=Pedestrian    xtl=392.6 ytl=823.9 xbr=415.0 ybr=900.3 source=auto occluded=false
+  box label=Car           xtl=1.6 ytl=830.8 xbr=33.2 ybr=885.5 source=auto occluded=false
+  box label=Pedestrian    xtl=432.7 ytl=814.7 xbr=463.1 ybr=891.6 source=auto occluded=false
+  box label=Car           xtl=191.7 ytl=827.1 xbr=313.9 ybr=894.1 source=auto occluded=false
+  box label=Car           xtl=106.1 ytl=825.4 xbr=159.6 ybr=871.0 source=auto occluded=false
+image name=adasind_284016.jpg w=1080 h=1920 id=44
+  box label=Pedestrian    xtl=315.2 ytl=796.8 xbr=392.7 ybr=933.3 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1051.0 xbr=189.9 ybr=1681.5 source=auto occluded=false
+  box label=Car           xtl=0.0 ytl=730.3 xbr=126.3 ybr=1173.6 source=auto occluded=false
+  box label=Bike          xtl=329.4 ytl=862.0 xbr=378.6 ybr=980.8 source=auto occluded=false
+  box label=Bike          xtl=317.3 ytl=862.9 xbr=389.9 ybr=981.3 source=auto occluded=false
+image name=adasind_295948.jpg w=1080 h=1920 id=45
+  box label=Truck         xtl=317.6 ytl=855.3 xbr=432.4 ybr=1005.0 source=auto occluded=false
+  box label=Truck         xtl=460.6 ytl=887.7 xbr=656.5 ybr=1065.7 source=auto occluded=false
+  box label=Pedestrian    xtl=156.2 ytl=938.7 xbr=188.6 ybr=1021.5 source=auto occluded=false
+  box label=Car           xtl=452.2 ytl=936.7 xbr=464.5 ybr=961.9 source=auto occluded=false
+  box label=Pedestrian    xtl=6.6 ytl=899.7 xbr=64.3 ybr=984.2 source=auto occluded=false
+  box label=Pedestrian    xtl=110.7 ytl=922.6 xbr=142.6 ybr=1020.5 source=auto occluded=false
+  box label=Car           xtl=422.3 ytl=917.2 xbr=439.8 ybr=965.4 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=951.6 xbr=100.9 ybr=1037.1 source=auto occluded=false
+  box label=Car           xtl=46.5 ytl=925.4 xbr=139.8 ybr=1071.5 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1200.0 xbr=231.9 ybr=1711.6 source=auto occluded=false
+image name=adasind_310008.jpg w=1080 h=1920 id=46
+  box label=Pedestrian    xtl=114.1 ytl=864.6 xbr=155.6 ybr=992.8 source=auto occluded=false
+  box label=Pedestrian    xtl=31.6 ytl=875.8 xbr=82.3 ybr=1034.0 source=auto occluded=false
+  box label=Pedestrian    xtl=73.0 ytl=873.9 xbr=108.8 ybr=997.9 source=auto occluded=false
+  box label=Pedestrian    xtl=16.7 ytl=867.3 xbr=49.8 ybr=1035.7 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1077.1 xbr=239.1 ybr=1657.6 source=auto occluded=false
+  box label=Truck         xtl=253.6 ytl=827.5 xbr=364.7 ybr=971.2 source=auto occluded=false
+  box label=Bus           xtl=253.6 ytl=827.6 xbr=364.6 ybr=971.0 source=auto occluded=false
+image name=adasind_319432.jpg w=1080 h=1920 id=47
+  box label=Pedestrian    xtl=638.8 ytl=889.1 xbr=737.1 ybr=1175.8 source=auto occluded=false
+  box label=Pedestrian    xtl=497.8 ytl=903.2 xbr=587.3 ybr=1164.7 source=auto occluded=false
+  box label=Pedestrian    xtl=47.1 ytl=902.8 xbr=93.0 ybr=1093.0 source=auto occluded=false
+  box label=Pedestrian    xtl=304.5 ytl=935.7 xbr=335.4 ybr=1006.9 source=auto occluded=false
+  box label=Pedestrian    xtl=206.5 ytl=908.3 xbr=298.9 ybr=1073.0 source=auto occluded=false
+  box label=Pedestrian    xtl=0.0 ytl=1120.1 xbr=239.2 ybr=1708.8 source=auto occluded=false
+  box label=Car           xtl=324.4 ytl=919.7 xbr=389.3 ybr=998.3 source=auto occluded=false
+  box label=Bike          xtl=208.2 ytl=983.7 xbr=287.5 ybr=1085.7 source=auto occluded=false
+  box label=Car           xtl=388.4 ytl=918.0 xbr=494.9 ybr=1036.8 source=auto occluded=false
+  box label=Truck         xtl=580.2 ytl=889.0 xbr=855.2 ybr=1172.2 source=auto occluded=false
+  box label=Car           xtl=472.6 ytl=902.5 xbr=617.2 ybr=1066.7 source=auto occluded=false
+  box label=Car           xtl=885.9 ytl=889.3 xbr=1079.6 ybr=1204.9 source=auto occluded=false
+  box label=Car           xtl=80.9 ytl=929.1 xbr=126.3 ybr=1021.4 source=auto occluded=false
+

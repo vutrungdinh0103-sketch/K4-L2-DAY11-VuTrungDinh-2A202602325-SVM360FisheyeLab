@@ -1,1 +1,8 @@
 id,date,question,decision,rationale,status
+D01,2026-09-28,C0 có nằm trong phạm vi rework không?,Chỉ ghi finding cho C0 và giữ nguyên bản đã khóa,C0 là frame căn chỉnh để luyện tool; rework chỉ áp cho slice B3-dense đã khóa nên thay đổi ở C0 không kiểm chứng được bằng lock2.txt,accepted
+D02,2026-09-28,Box nằm trong ego_body/lens_border thì bỏ hay giữ?,Bỏ hoặc thu về phần nhìn thấy rồi khóa lại bản v2,R09 cấm box trong vùng don't-care; probe 10x10 cho thấy L9/L11 (167700) và L7/L8 (199770) nằm hơn nửa diện tích trong vùng này,accepted
+D03,2026-09-28,Cụm hai xe đạp rìa trái ở 199770 gán thế nào?,Sửa L6 từ Truck sang Bike và bổ sung box thứ hai,R04 chỉ cho phương tiện hai bánh là Bike; reference tách R5 và R6 nên cụm này cần hai box thay vì một box Truck,accepted
+D04,2026-09-28,Ai sửa lỗi model gọi sai lớp xe ba bánh?,Mở escalation cho ai_team và không dùng model làm chuẩn,Model yolo26m gọi ThreeWheeler thành Truck (M8 ở 167700) và Car (M12 ở 199770) trên nhiều frame; người gán không sửa được model,escalated
+D05,2026-09-28,Lệch Car/Truck cho van nhỏ ở xa xử lý sao?,Tự sửa thành Car theo R04 và đề xuất bổ sung ví dụ biên vào guideline,Vùng 580-700 ở 167700 mờ; R04 đã nói van chở người là Car nhưng thiếu ví dụ nên hai người gán có thể chọn khác nhau,accepted
+D06,2026-09-28,R4 bị báo MISSING dù nằm trong vùng don't-care,Escalate cho guideline: giữ không vẽ và đề xuất R09b (miễn trừ đối xứng ngưỡng 50%),Probe trả về ignored=True cho R4 nhưng matcher chỉ miễn trừ phía L; vẽ thêm box ở đây sẽ vi phạm R09,escalated
+D07,2026-09-28,Dùng ngưỡng IoU nào để đọc chất lượng cục bộ?,Đọc bảng chính ở IoU 0.50 và đối chiếu 0.30/0.70 trong iou_sweep.md,IoU 0.50 là ngưỡng matcher của lab; sweep cho thấy edge gãy ở cả 0.70 nên kết luận không phụ thuộc ngưỡng,accepted

@@ -1,0 +1,58 @@
+﻿
+FullName                                                                                                                                    Length
+--------                                                                                                                                    ------
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\00_setup                                  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\p1_calib                                  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\parking                                   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft                                  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r2_qa                                     
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag                                   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\rework                                    
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\screenshots                               
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\stretch                                   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\20_guideline_patch.md               344   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\30_escalation_ticket.md             269   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\40_decision_log.csv                 44    
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\45_review_plan.md                   912   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\45_sampling_plan.csv                206   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\46_gold_set_plan.md                 1283  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\50_exit_ticket.md                   894   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\findings.csv                        3237  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\manifest.json                       6835  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\README.md                           2462  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\00_setup\doctor.txt                 134   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\00_setup\mode.json                  320   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\00_setup\sensor_context.md          411   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\p1_calib\.gitkeep                   0     
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\p1_calib\annotations.xml            10791 
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\p1_calib\compare.html               2906  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\p1_calib\compare.md                 452   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\p1_calib\lock.txt                   224   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\p1_calib\reference.txt              75    
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\parking\annotations.xml             1859  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\parking\observations.md             866   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft\.gitkeep                   0     
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft\annotations.xml            21962 
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft\compare.html               9770  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft\compare.md                 831   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft\lock.txt                   236   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft\reference.txt              81    
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r1_craft\selfqc.md                  451   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r2_qa\.gitkeep                      0     
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r2_qa\qa_overlay.html               5562  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r2_qa\qa_review.md                  340   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\.gitkeep                    0     
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\iou_sweep.md                705   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\local_quality.json          8395  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\local_quality.md            2768  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\local_quality_conflicts.csv 1185  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\local_quality_confusion.csv 192   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\model_compare.html          12700 
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\model_compare.md            1250  
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\r3_diag\zone_table.md               833   
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\rework\.gitkeep                     0     
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\screenshots\.gitkeep                0     
+C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\submission\stretch\.gitkeep                    0     
+
+
+

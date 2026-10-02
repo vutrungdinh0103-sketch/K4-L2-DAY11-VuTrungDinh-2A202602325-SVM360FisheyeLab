@@ -1,0 +1,30 @@
+# M model :: assets/model-yolo26m.xml
+== adasind_145860.jpg
+  1    Truck           397.7   801.1    85.6   108.2  center occl=false trunc=false src=auto
+  2    Car              43.1   862.5   108.4    82.8  mid    occl=false trunc=false src=auto
+  3    Pedestrian        0.0  1040.1   204.8   622.7  edge   occl=false trunc=false src=auto
+  4    Truck           238.8   855.8    44.7    55.6  mid    occl=false trunc=false src=auto
+== adasind_167700.jpg
+  1    Pedestrian      351.4   877.8   133.6   332.0  center occl=false trunc=false src=auto
+  2    Pedestrian      910.4   727.2   169.6   685.2  mid    occl=false trunc=false src=auto
+  3    Pedestrian      264.0   927.0    66.3   174.6  mid    occl=false trunc=false src=auto
+  4    Car             578.2   877.6   122.9   116.0  center occl=false trunc=false src=auto
+  5    Bike            313.2  1011.6    39.0   100.0  mid    occl=false trunc=false src=auto
+  6    Bike            426.9   972.8   174.4   213.5  center occl=false trunc=false src=auto
+  7    Bike            754.9  1078.7   199.4   210.5  mid    occl=false trunc=false src=auto
+  8    Truck            23.1   920.8   244.0   257.4  mid    occl=false trunc=false src=auto
+  9    Truck           551.7   870.8    45.5    66.5  center occl=false trunc=false src=auto
+== adasind_199770.jpg
+  1    Pedestrian      617.5   832.3    84.3   189.4  center occl=false trunc=false src=auto
+  2    Pedestrian      954.9  1281.8   125.1   275.9  edge   occl=false trunc=false src=auto
+  3    Bike            534.7   886.7   117.2   113.2  center occl=false trunc=false src=auto
+  4    Pedestrian        0.0   987.5   140.2   589.2  edge   occl=false trunc=false src=auto
+  5    Bike             76.6   831.8    70.0    71.9  edge   occl=false trunc=false src=auto
+  6    Car             223.0   813.8    51.4    47.1  mid    occl=false trunc=false src=auto
+  7    Truck           925.4   817.5   154.6   489.2  mid    occl=false trunc=false src=auto
+  8    Car               0.0   783.1    81.7   151.9  edge   occl=false trunc=false src=auto
+  9    Pedestrian      351.8   830.2    15.4    55.8  mid    occl=false trunc=false src=auto
+  10   Pedestrian      847.9   851.4    51.3    96.2  center occl=false trunc=false src=auto
+  11   Pedestrian      676.1   835.4    29.7    79.3  center occl=false trunc=false src=auto
+  12   Car             372.8   808.9   157.4   138.2  center occl=false trunc=false src=auto
+  13   Pedestrian      752.3   849.7    23.6    73.6  center occl=false trunc=false src=auto

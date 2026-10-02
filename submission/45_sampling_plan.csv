@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,20,TODO
-front,hard,,30,TODO
-rear,normal,,20,TODO
-rear,hard,,30,TODO
-left,normal,,20,TODO
-left,hard,,30,TODO
-right,normal,,20,TODO
-right,hard,,30,TODO
+front,normal,30,medium,Camera trước là vùng nhìn chính của ADASIND; mật độ vật trung bình nên dùng làm mốc độ phủ.
+front,hard,30,high,Vật bị vòng kính cắt và xe ba bánh nhỏ ở xa là hai lỗi người gán hay gặp nhất trong findings.csv.
+rear,normal,25,medium,Camera sau ít vật hơn nhưng góc chết sát ego_body; cần frame để soát lại lens_border.
+rear,hard,25,high,Cụm phương tiện bám đuôi và biển số mờ làm nguy cơ bỏ sót vật nhỏ cao.
+left,normal,20,low,Làn trái phần lớn trống; tăng tỷ lệ này sẽ tiêu ngân sách 200 frame mà ít ca khó.
+left,hard,20,high,Vật đi vào từ mép trái rất nhanh và dễ bị cắt nửa box nên cần hard slice riêng.
+right,normal,25,medium,Vùng seam phải với camera sau; dùng để soát vật xuất hiện hai lần.
+right,hard,25,high,Seam phải là nơi dễ sinh DUPLICATE nhất; cần frame để thử policy cross-camera.

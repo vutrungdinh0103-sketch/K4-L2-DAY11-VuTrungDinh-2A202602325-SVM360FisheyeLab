@@ -1,0 +1,62 @@
+﻿    """Assign each box to exactly one deterministic three-way group."""
+    lr = match_pairs(left, refs)
+    used_l = {id(a) for a, _ in lr}
+    used_r = {id(b) for _, b in lr}
+    groups = [(a, b, None) for a, b in lr]
+    groups += [(a, None, None) for a in left if id(a) not in used_l]
+    groups += [(None, b, None) for b in refs if id(b) not in used_r]
+    candidates = []
+    for group_index, (a, b, _) in enumerate(groups):
+        for model_index, m in enumerate(preds):
+            scores = [iou(item["box"], m["box"]) for item in (a, b)
+                      if item is not None and item["label"] == m["label"]]
+            if scores and max(scores) >= .5:
+                candidates.append((-max(scores), group_index, model_index))
+    assigned_groups, assigned_models = set(), set()
+    for _, group_index, model_index in sorted(candidates):
+        if group_index not in assigned_groups and model_index not in assigned_models:
+            a, b, _ = groups[group_index]
+            groups[group_index] = (a, b, preds[model_index])
+            assigned_groups.add(group_index)
+            assigned_models.add(model_index)
+    groups += [(None, None, m) for index, m in enumerate(preds) if index not in assigned_models]
+    return groups
+
+
+def model(base):
+    slice_id, left_doc, ref_doc = _doc_paths(base, "r1_craft")
+    model_doc = parse_file(base / "assets" / "model-yolo26m.xml")
+    frame_names = slices(base)[slice_id]
+    circle_map = circles(base)
+    counts = {z: Counter() for z in ZONES}
+    left_counts = {z: Counter() for z in ZONES}
+    left_issues = {z: Counter() for z in ZONES}
+    rows, sections, overlays = [], ["# L / R / M", "", "L/R/M là thứ tự box in-scope theo XML của từng frame.", ""], []
+    for frame in frame_names:
+        if frame not in circle_map:
+            raise LabError("Thiếu vòng kính trong frames.csv: " + frame)
+        ignore_polys = [p["points"] for p in polygons(ref_doc, frame, "ignore_region")]
+        left = [v for v in scoped(left_doc, frame) if not ignored(v["box"], ignore_polys)]
+        refs = scoped(ref_doc, frame)
+        preds = [v for v in scoped(model_doc, frame) if not ignored(v["box"], ignore_polys)]
+        groups = group_three(left, refs, preds)
+        size = left_doc["images"].get(frame, ref_doc["images"].get(frame))["size"]
+        for bin_name, result in zone_counts(left, refs, ignore_polys, circle_map[frame]).items():
+            left_counts[bin_name].update(result)
+        for item in classify(scoped(left_doc, frame, preserve_ignored=True), refs, ignore_polys,
+                             circle_map[frame], size):
+            if item["what"] not in ("MATCHED", "IGNORE_SCOPE"):
+                left_issues[item["zone"]][item["what"]] += 1
+        sections.append("## " + frame)
+        for a, b, c in groups:
+            cell = three_way_cell(bool(a), bool(b), bool(c))
+            label = "+".join("%s%d" % (prefix, item["index"]) for prefix, item in (("L", a), ("R", b), ("M", c)) if item)
+            bin_name = zone((b or a or c)["box"], circle_map[frame])
+            counts[bin_name][cell] += 1
+            sections.append("- %s: %s (%s)" % (label, cell, bin_name))
+            if cell != "LRM":
+                what = "MISSING" if cell in ("LR_noM", "RM_noL", "R_only") else "SPURIOUS"
+                rows.append({"round": "r3_diag", "slice": slice_id, "frame": frame,
+                             "object_ref": label, "cell": cell, "what": what})
+        overlays.append(_overlay(frame, size, {"L": left, "R": refs, "M": preds}, "../../assets/images/" + frame))
+    sections += ["", "## Zone × cell"] + _table(counts, CELLS)

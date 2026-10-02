@@ -1,0 +1,29 @@
+﻿
+
+    Directory: C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\data
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                                                  
+----                 -------------         ------ ----                                                                                                                                                  
+dar--l        28/09/2026     17:50                _qa                                                                                                                                                   
+dar--l        28/09/2026     18:05                _ref                                                                                                                                                  
+
+
+    Directory: C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\data\_qa
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                                                  
+----                 -------------         ------ ----                                                                                                                                                  
+-a---l        28/09/2026     17:50          21962 B3-dense.xml                                                                                                                                          
+
+
+    Directory: C:\Users\vutru\OneDrive\Tài liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\data\_ref
+
+
+Mode                 LastWriteTime         Length Name                                                                                                                                                  
+----                 -------------         ------ ----                                                                                                                                                  
+-a---l        28/09/2026     18:05          11382 B3-dense.xml                                                                                                                                          
+-a---l        28/09/2026     16:50           3476 C0.xml                                                                                                                                                
+
+
+

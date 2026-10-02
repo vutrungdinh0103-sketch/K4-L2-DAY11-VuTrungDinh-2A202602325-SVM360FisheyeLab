@@ -1,0 +1,350 @@
+### markers
+submission/00_setup/sensor_context.md:3: - TODO — Rig: mô tả ngắn xe/camera gắn ở đâu theo hiểu biết của bạn từ ảnh (ADASIND không kèm tài liệu rig chi
+submission/00_setup/sensor_context.md:5: - TODO — `ego_body` nhìn thấy ở đâu trong frame (góc capo, gương, tay lái...).
+submission/00_setup/sensor_context.md:6: - TODO — Vòng kính (lens circle) nằm ở vị trí nào trong ảnh, chiếm khoảng bao nhiêu phần khung hình.
+submission/20_guideline_patch.md:3: - **Rule mới đề xuất:** TODO
+submission/20_guideline_patch.md:4: - **Áp dụng cho:** TODO (class/attribute/zone/ignore_region liên quan)
+submission/20_guideline_patch.md:5: - **Vì sao luật hiện tại (`docs/02-rules-vi.md`) không đủ:** TODO
+submission/20_guideline_patch.md:6: - **`rules_version` mới:** TODO (ví dụ v1.0.0 → v1.1.0)
+submission/20_guideline_patch.md:7: - **Hiệu lực từ:** TODO (round nào bắt đầu áp dụng)
+submission/30_escalation_ticket.md:5: - **Frame:** TODO
+submission/30_escalation_ticket.md:6: - **Ảnh chụp:** TODO (đường dẫn trong `submission/screenshots/`)
+submission/30_escalation_ticket.md:7: - **Expected impact:** TODO
+submission/30_escalation_ticket.md:8: - **Owner:** TODO (`annotator` / `guideline` / `data_ops` / `ai_team` / `qa`)
+submission/30_escalation_ticket.md:9: - **Recommendation:** TODO
+submission/45_review_plan.md:8: | TODO | TODO | TODO | TODO |
+submission/45_review_plan.md:9: | TODO | TODO | TODO | TODO |
+submission/45_review_plan.md:11: Giới hạn của kết luận từ ba frame ADASIND: TODO
+submission/45_review_plan.md:16: như nhiều ca độc lập), và vì sao kế hoạch đó chỉ giúp tìm ca cần soi, chưa đo được tỷ lệ lỗi: TODO
+submission/46_gold_set_plan.md:11: | front | TODO | TODO | TODO | TODO |
+submission/46_gold_set_plan.md:12: | rear | TODO | TODO | TODO | TODO |
+submission/46_gold_set_plan.md:13: | left | TODO | TODO | TODO | TODO |
+submission/46_gold_set_plan.md:14: | right | TODO | TODO | TODO | TODO |
+submission/46_gold_set_plan.md:16: - Khi nào cần refresh gold set (đổi camera, calibration hoặc rule): TODO
+submission/46_gold_set_plan.md:17: - Một ca seam/cross-camera cần policy và evidence trước khi ghép hai box: TODO
+submission/46_gold_set_plan.md:18: - Vì sao peer agreement hoặc quality report trên ảnh một camera chưa chứng minh gold set đúng cho cả bốn camera: TODO
+submission/50_exit_ticket.md:9: tắc riêng? Vì sao? TODO
+submission/50_exit_ticket.md:11: Outside? Nêu bằng chứng sẽ cần trước khi nối track qua hai camera. TODO
+submission/50_exit_ticket.md:13: bạn đã xử lý thế nào, và nếu làm lại slice này bạn sẽ đổi gì trong cách làm? TODO
+submission/manifest.json:186: "Còn TODO trong 00_setup/sensor_context.md",
+submission/manifest.json:187: "Còn TODO trong r3_diag/zone_table.md",
+submission/manifest.json:192: "Còn TODO trong 20_guideline_patch.md",
+submission/manifest.json:193: "Còn TODO trong 30_escalation_ticket.md",
+submission/manifest.json:194: "Còn TODO trong 45_review_plan.md",
+submission/manifest.json:195: "Còn TODO trong 45_sampling_plan.csv",
+submission/manifest.json:196: "Còn TODO trong 46_gold_set_plan.md",
+submission/manifest.json:197: "Còn TODO trong 50_exit_ticket.md",
+submission/r3_diag/zone_table.md:13: - Zone nào người (L) và model (M) gãy nhiều nhất, dẫn số ở bảng trên: TODO
+submission/r3_diag/zone_table.md:14: - Giả thuyết vì sao (méo fisheye, box lỏng, thiếu `ego_body`, ...) và giới hạn của slice ba frame: TODO
+submission/README.md:3: Đây là nơi lưu bằng chứng cho toàn bộ Day 11. Bạn điền các file mẫu có `TODO`, thêm ảnh chụp và để các lệnh `python3 lab11.py ...` tạo các file kỹ thuật cần thiết. **Giữ nguyên tên thư mục và tên file
+submission/README.md:8: 2. Điền nội dung của bạn thay cho `TODO`; đừng xóa tiêu đề, cột CSV hoặc file mẫu.
+
+### screenshots
+.gitkeep
+
+### submission/00_setup/doctor.txt (co)
+✓ Python 3.14
+✓ CVAT 2.74.1
+✓ Git không track .env
+! Chưa có gh; tự kiểm tra repo bài nộp là PUBLIC trên GitHub
+
+### submission/00_setup/mode.json (co)
+{
+  "members": [
+    "Vu-Trung-Dinh"
+  ],
+  "assignments": {
+    "Vu-Trung-Dinh": "B3-dense"
+  },
+  "self": "Vu-Trung-Dinh",
+  "slice": "B3-dense",
+  "degrade": [],
+  "current_slice": "B3-dense",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": [
+    "adasind_145860.jpg:1"
+  ]
+}
+
+### submission/00_setup/sensor_context.md (co)
+# Sensor context
+
+- TODO — Rig: mô tả ngắn xe/camera gắn ở đâu theo hiểu biết của bạn từ ảnh (ADASIND không kèm tài liệu rig chi
+  tiết, ghi theo quan sát).
+- TODO — `ego_body` nhìn thấy ở đâu trong frame (góc capo, gương, tay lái...).
+- TODO — Vòng kính (lens circle) nằm ở vị trí nào trong ảnh, chiếm khoảng bao nhiêu phần khung hình.
+
+### submission/README.md (co)
+# `submission/` — thư mục bài nộp của bạn
+
+Đây là nơi lưu bằng chứng cho toàn bộ Day 11. Bạn điền các file mẫu có `TODO`, thêm ảnh chụp và để các lệnh `python3 lab11.py ...` tạo các file kỹ thuật cần thiết. **Giữ nguyên tên thư mục và tên file** để `python3 lab11.py check` nhận ra bài nộp.
+
+## Cách dùng an toàn
+
+1. Làm theo [README chính](../README.md) và [GUIDE](../GUIDE.md) theo thứ tự P0–P6.
+2. Điền nội dung của bạn thay cho `TODO`; đừng xóa tiêu đề, cột CSV hoặc file mẫu.
+3. Export từ CVAT rồi dùng lệnh hướng dẫn để lưu/khóa file. Không chép XML reference trong `refs/` vào đây.
+4. Trước khi push repo cá nhân **Public**, chạy `python3 lab11.py check`, đọc từng lỗi và sửa bằng chứng thật.
+
+## Bạn sẽ thấy gì trong đây?
+
+| Vị trí | Bạn làm gì ở đó? |
+|---|---|
+| `00_setup/` | Lưu kết quả kiểm môi trường, slice được giao và sensor context. |
+| `parking/` | Lưu export task vạch ô đỗ và quan sát của bạn. |
+| `p1_calib/` | Lưu calibration C0 sau khi khóa, mở reference và so sánh. |
+| `r1_craft/` | Lưu bản fisheye cuối, mã khóa và self-QC của chính bạn. |
+| `r2_qa/` | Lưu review mù export đã khóa của bạn khác hoặc cold review. |
+| `r3_diag/` | Lưu local quality, model comparison, conflict và zone table. |
+| `rework/` | Lưu export sau sửa, mã khóa mới và delta trước/sau. |
+| `screenshots/` | Thêm ít nhất hai ảnh minh chứng cho finding hoặc escalation. |
+| File ở gốc thư mục | Lúc đầu: findings, decision log, sampling plan và gold-set plan. Sau `python3 lab11.py reference r1_craft` có thêm guideline patch, escalation ticket, review plan và exit ticket; `python3 lab11.py card` tạo error card. |
+
+Một số file/chỗ trống chỉ xuất hiện sau khi bạn chạy lệnh tương ứng; bảng số trong `zone_table.md` và error card do lệnh tính, bạn chỉ viết phần nhận xét. Ví dụ, `r1_craft/annotations.xml` chỉ có sau khi bạn export CVAT và khóa `r1_craft`. Điều đó bình thường; đừng tạo file rỗng để cho đủ danh sách.
+
+`python3 lab11.py check` chỉ kiểm cấu trúc và độ đầy đủ. Người chấm đọc nhãn, ảnh và lập luận theo [rubric 100 điểm](../RUBRIC.md).
+
+### submission/20_guideline_patch.md (co)
+# Guideline patch
+
+- **Rule mới đề xuất:** TODO
+- **Áp dụng cho:** TODO (class/attribute/zone/ignore_region liên quan)
+- **Vì sao luật hiện tại (`docs/02-rules-vi.md`) không đủ:** TODO
+- **`rules_version` mới:** TODO (ví dụ v1.0.0 → v1.1.0)
+- **Hiệu lực từ:** TODO (round nào bắt đầu áp dụng)
+
+### submission/30_escalation_ticket.md (co)
+# Escalation ticket
+
+## Ticket 1
+
+- **Frame:** TODO
+- **Ảnh chụp:** TODO (đường dẫn trong `submission/screenshots/`)
+- **Expected impact:** TODO
+- **Owner:** TODO (`annotator` / `guideline` / `data_ops` / `ai_team` / `qa`)
+- **Recommendation:** TODO
+
+### submission/45_review_plan.md (co)
+# Kế hoạch review từ lỗi quan sát được
+
+Từ `findings.csv` và `zone_table.md`, chọn **hai lát cắt của bài ADASIND một camera** cần review trước. Bảng này
+giải thích dữ liệu thật bạn vừa làm; nó không thay cho kế hoạch bốn camera giả lập ở `45_sampling_plan.csv`.
+
+| Lát cắt / frame | Số ca và loại lỗi | Vì sao review trước | Bằng chứng cần giữ |
+|---|---|---|---|
+| TODO | TODO | TODO | TODO |
+| TODO | TODO | TODO | TODO |
+
+Giới hạn của kết luận từ ba frame ADASIND: TODO
+
+## Chuyển sang kế hoạch bốn camera giả lập
+
+Cách soát độ phủ của 200 frame ở `45_sampling_plan.csv` (kể cả tránh đếm nhiều frame liền nhau trong cùng cảnh
+như nhiều ca độc lập), và vì sao kế hoạch đó chỉ giúp tìm ca cần soi, chưa đo được tỷ lệ lỗi: TODO
+
+### submission/46_gold_set_plan.md (co)
+# Đề xuất gold set theo camera — tình huống giả lập
+
+**Đầu bài:** 50.000 frame từ bốn camera SVM, ngân sách chọn 200 frame để review/gold. Đây là tình huống trên slide,
+**không phải** 50.000 frame có trong repo. Phân bổ đúng 200 ở `45_sampling_plan.csv` cho bốn camera, mỗi camera có
+normal và hard slice. “Gold set” ở đây là **kế hoạch tạo** reference sau kiểm chứng, không phải teaching reference
+ADASIND hoặc nhãn bạn vừa vẽ. Nếu cần, dùng `notebooks/day11-svm360-colab.ipynb` để thử tổng phân bổ; notebook
+không làm thay phần lý do.
+
+| camera_id | Hard case cần chọn | Vì sao dễ sai | Annotation space / calibration cần giữ | Cách review trước khi gọi là gold |
+|---|---|---|---|---|
+| front | TODO | TODO | TODO | TODO |
+| rear | TODO | TODO | TODO | TODO |
+| left | TODO | TODO | TODO | TODO |
+| right | TODO | TODO | TODO | TODO |
+
+- Khi nào cần refresh gold set (đổi camera, calibration hoặc rule): TODO
+- Một ca seam/cross-camera cần policy và evidence trước khi ghép hai box: TODO
+- Vì sao peer agreement hoặc quality report trên ảnh một camera chưa chứng minh gold set đúng cho cả bốn camera: TODO
+
+### submission/50_exit_ticket.md (co)
+cline
+
+# Exit ticket
+
+Đọc `docs/10-svm360-reading-vi.md` trước khi trả lời câu 1–2. Các câu về zone, `why`, rework, parking và sampling
+đã nằm trong file tương ứng nên không hỏi lại ở đây.
+
+1. Một vật ở vùng seam giữa hai camera thật xuất hiện với hai box khác nhau: đó là lỗi `DUPLICATE` hay cần một quy
+   tắc riêng? Vì sao? TODO
+2. Một vật đi qua nhiều frame trên cùng camera: khi nào giữ cùng track ID, khi nào thêm keyframe hoặc trạng thái
+   Outside? Nêu bằng chứng sẽ cần trước khi nối track qua hai camera. TODO
+3. Nhìn lại cả buổi: một chỗ bạn tin nhãn mình đúng nhưng reference hoặc người soát nghĩ khác (dẫn frame/`object_ref`),
+   bạn đã xử lý thế nào, và nếu làm lại slice này bạn sẽ đổi gì trong cách làm? TODO
+
+### submission/40_decision_log.csv (co)
+id,date,question,decision,rationale,status
+D01,2026-09-28,C0 có nằm trong phạm vi rework không?,Chỉ ghi finding cho C0 và giữ nguyên bản đã khóa,C0 là frame căn chỉnh để luyện tool; rework chỉ áp cho slice B3-dense đã khóa nên thay đổi ở C0 không kiểm chứng được bằng lock2.txt,accepted
+D02,2026-09-28,Box nằm trong ego_body/lens_border thì bỏ hay giữ?,Bỏ hoặc thu về phần nhìn thấy rồi khóa lại bản v2,R09 cấm box trong vùng don't-care; probe 10x10 cho thấy L9/L11 (167700) và L7/L8 (199770) nằm hơn nửa diện tích trong vùng này,accepted
+D03,2026-09-28,Cụm hai xe đạp rìa trái ở 199770 gán thế nào?,Sửa L6 từ Truck sang Bike và bổ sung box thứ hai,R04 chỉ cho phương tiện hai bánh là Bike; reference tách R5 và R6 nên cụm này cần hai box thay vì một box Truck,accepted
+D04,2026-09-28,Ai sửa lỗi model gọi sai lớp xe ba bánh?,Mở escalation cho ai_team và không dùng model làm chuẩn,Model yolo26m gọi ThreeWheeler thành Truck (M8 ở 167700) và Car (M12 ở 199770) trên nhiều frame; người gán không sửa được model,escalated
+D05,2026-09-28,Lệch Car/Truck cho van nhỏ ở xa xử lý sao?,Tự sửa thành Car theo R04 và đề xuất bổ sung ví dụ biên vào guideline,Vùng 580-700 ở 167700 mờ; R04 đã nói van chở người là Car nhưng thiếu ví dụ nên hai người gán có thể chọn khác nhau,accepted
+D06,2026-09-28,R4 bị báo MISSING dù nằm trong vùng don't-care,Giữ không vẽ và đề xuất luật rõ ngưỡng 50% cho cả hai phía,Probe trả về ignored=True cho R4 nhưng matcher chỉ miễn trừ phía L; vẽ thêm box ở đây sẽ vi phạm R09,escalated
+D07,2026-09-28,Dùng ngưỡng IoU nào để đọc chất lượng cục bộ?,Đọc bảng chính ở IoU 0.50 và đối chiếu 0.30/0.70 trong iou_sweep.md,IoU 0.50 là ngưỡng matcher của lab; sweep cho thấy edge gãy ở cả 0.70 nên kết luận không phụ thuộc ngưỡng,accepted
+
+### submission/45_sampling_plan.csv (co)
+camera_id,slice_type,frames,risk,rationale
+front,normal,30,medium,Camera trước là vùng nhìn chính của ADASIND; mật độ vật trung bình nên dùng làm mốc độ phủ.
+front,hard,30,high,Vật bị vòng kính cắt và xe ba bánh nhỏ ở xa là hai lỗi người gán hay gặp nhất trong findings.csv.
+rear,normal,25,medium,Camera sau ít vật hơn nhưng góc chết sát ego_body; cần frame để soát lại lens_border.
+rear,hard,25,high,Cụm phương tiện bám đuôi và biển số mờ làm nguy cơ bỏ sót vật nhỏ cao.
+left,normal,20,low,Làn trái phần lớn trống; tăng tỷ lệ này sẽ tiêu ngân sách 200 frame mà ít ca khó.
+left,hard,20,high,Vật đi vào từ mép trái rất nhanh và dễ bị cắt nửa box nên cần hard slice riêng.
+right,normal,25,medium,Vùng seam phải với camera sau; dùng để soát vật xuất hiện hai lần.
+right,hard,25,high,Seam phải là nơi dễ sinh DUPLICATE nhất; cần frame để thử policy cross-camera.
+
+### submission/r1_craft/selfqc.md (co)
+# Tự soát
+
+- Tên task thiếu raw_fisheye
+
+## Checklist thủ công
+
+- [X] Phạm vi H=40 và vật cần vẽ
+- [X] lens_border và ego_body
+- [X] Class sáu nhãn
+- [X] Rider và Bike
+- [X] Geometry trên ảnh fisheye gốc
+- [X] truncated và occluded
+- [X] Vật thiếu hoặc box trùng
+- [X] ignore_region có reason
+- [X] Tên task raw_fisheye và export CVAT 1.1
+
+## Fill ratio (K12)
+
+chưa vẽ polygon K12 (degrade)
+
+### submission/r1_craft/reference.txt (co)
+slice: B3-dense
+lock_before_reveal: true
+opened_at: 2026-09-28T18:05:42+07:00
+
+### submission/r2_qa/qa_review.md (co)
+# QA review · B3-dense
+
+Mã khóa: 18F4-D916
+
+| frame              | object_ref    | rule_id | nhận xét |
+| ------------------ | ------------- | ------- | ---------- |
+| adasind_167700.jpg | L9 Pedestrian | R05     |            |
+
+## adasind_167700
+
+Ghi finding r2_qa: cell=L_only, rule_id có giá trị, why để trống.
+
+### submission/r3_diag/model_compare.md (co)
+# L / R / M
+
+L/R/M là thứ tự box in-scope theo XML của từng frame.
+
+## adasind_145860.jpg
+- L2+R1+M1: LRM (center)
+- L1+R2+M2: LRM (mid)
+## adasind_167700.jpg
+- L1+R8+M9: LRM (center)
+- L7+R6: LR_noM (edge)
+- L3+R3+M3: LRM (mid)
+- L6+R7: LR_noM (center)
+- L8+R1+M1: LRM (center)
+- L10+R5+M6: LRM (center)
+- L2: L_only (mid)
+- L4+M5: LM_noR (mid)
+- L5: L_only (center)
+- R2+M7: RM_noL (mid)
+- R4+M4: RM_noL (center)
+- R9: R_only (mid)
+- M8: M_only (mid)
+## adasind_199770.jpg
+- L2+R1+M1: LRM (center)
+- L5+R7: LR_noM (mid)
+- L11+R2: LR_noM (edge)
+- L4+R8: LR_noM (center)
+- L1+M3: LM_noR (center)
+- L3+M9: LM_noR (mid)
+- L6: L_only (edge)
+- L9: L_only (center)
+- L10: L_only (center)
+- L12: L_only (center)
+- R3+M10: RM_noL (mid)
+- R4: R_only (mid)
+- R5: R_only (edge)
+- R6: R_only (edge)
+- R9: R_only (center)
+- M4: M_only (edge)
+- M5: M_only (edge)
+- M6: M_only (mid)
+- M8: M_only (edge)
+- M11: M_only (center)
+- M12: M_only (center)
+- M13: M_only (center)
+
+## Zone × cell
+| zone | LRM | LR_noM | LM_noR | L_only | RM_noL | R_only | M_only |
+|---|---|---|---|---|---|---|---|
+| center | 5 | 2 | 1 | 4 | 1 | 1 | 3 |
+| mid | 2 | 1 | 2 | 1 | 2 | 2 | 2 |
+| edge | 0 | 2 | 0 | 1 | 0 | 2 | 3 |
+
+### submission/r3_diag/iou_sweep.md (co)
+# IoU sweep
+
+| threshold | side | zone | matched | missing | spurious |
+|---|---|---|---:|---:|---:|
+| 0.30 | L | center | 8 | 1 | 4 |
+| 0.30 | L | mid | 4 | 3 | 2 |
+| 0.30 | L | edge | 2 | 2 | 1 |
+| 0.30 | M | center | 7 | 2 | 3 |
+| 0.30 | M | mid | 5 | 2 | 3 |
+| 0.30 | M | edge | 1 | 3 | 2 |
+| 0.50 | L | center | 7 | 2 | 5 |
+| 0.50 | L | mid | 3 | 4 | 3 |
+| 0.50 | L | edge | 2 | 2 | 1 |
+| 0.50 | M | center | 7 | 2 | 3 |
+| 0.50 | M | mid | 4 | 3 | 4 |
+| 0.50 | M | edge | 0 | 4 | 3 |
+| 0.70 | L | center | 4 | 5 | 8 |
+| 0.70 | L | mid | 3 | 4 | 3 |
+| 0.70 | L | edge | 1 | 3 | 2 |
+| 0.70 | M | center | 5 | 4 | 5 |
+| 0.70 | M | mid | 4 | 3 | 4 |
+| 0.70 | M | edge | 0 | 4 | 3 |
+
+### submission/p1_calib/compare.md (co)
+# So sánh L với R
+
+Chỉ số L/R là thứ tự box cao ≥ H=40 trong từng frame, theo thứ tự XML; bắt đầu từ 1.
+Box L trong ignore_region được báo IGNORE_SCOPE, không tính SPURIOUS.
+
+## adasind_019560.jpg
+- L1 center SPURIOUS
+- L7+R3 edge WRONG_CLASS
+
+## Theo zone
+| zone | n_ref | matched | missing | spurious |
+|---|---|---|---|---|
+| center | 3 | 3 | 0 | 1 |
+| mid | 2 | 2 | 0 | 0 |
+| edge | 1 | 0 | 1 | 1 |
+
+### submission/parking/observations.md (co)
+# Quan sát vạch ô đỗ
+
+- Hai vạch `parking_line` đã vẽ (mô tả vị trí trong ảnh):  2 vạch sơn màu trắng ở khu vực gần góc trái bên dưới của ảnh.
+- Một vạch/dấu sơn hoặc biên **không** vẽ, và vì sao: viền vỉa hè phía bên phải ảnh vì đây đều không phải là parking_line hay free_space
+- Polygon `free_space` dừng ở đâu; có phần bị che nào không: Polygon biểu diễn làn đường di chuyển chạy cắt ngang bãi đỗ. Polygon này dừng lại chính xác tại các điểm đầu mút của các vạch đỗ xe. Toàn bộ vùng `free_space` này hiện hoàn toàn trống trải và không bị che khuất bởi bất kỳ phương tiện hay vật thể nào.
+- Ca chưa chắc cần hỏi người soát (nếu không có, ghi “không có”): không có
+
+### submission/r3_diag/local_quality_confusion.csv (co)
+reference\export,Bike,Car,Pedestrian,ThreeWheeler,Truck,<missing>
+Bike,1,0,0,0,1,4
+Car,0,1,0,0,1,0
+Pedestrian,0,0,3,0,0,1
+ThreeWheeler,0,0,0,3,0,1
+Truck,0,0,0,0,4,0
+<extra>,2,0,3,2,0,0

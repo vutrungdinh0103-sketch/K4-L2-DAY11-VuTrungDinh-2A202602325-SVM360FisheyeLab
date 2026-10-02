@@ -1,0 +1,9 @@
+round: rework
+slice: B3-dense
+sha256: 620a0335942089b31e6ddeac1accac1fab718b5e92c89a6be36d5a8378fd2824
+code: 620A-0335
+locked_at: 2026-10-02T12:13:12+07:00
+shapes: box=19, polygon=10
+prefill_kept: 0
+prefill_edited: 1
+new: 18

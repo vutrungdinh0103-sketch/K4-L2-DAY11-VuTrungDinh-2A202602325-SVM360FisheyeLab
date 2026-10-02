@@ -1,0 +1,103 @@
+### tong dong: 57
+
+### round=r2_qa
+frame=adasind_167700.jpg | object_ref=L9 | cell=L_only | what=ATTRIBUTE | why= | rule_id=R05 | action=keep_with_reason | note=R11: attribute là phán đoán; box này truncated=true đúng vì bị vòng kính cắt chứ không bị vật khác che.
+frame=adasind_199770.jpg | object_ref=L8 | cell=L_only | what=IGNORE_SCOPE | why= | rule_id=R09 | action=rework | note=Box nằm trong vùng ego_body/lens_border nên người soát không thể xác nhận đúng sai; trả lại người gán để bỏ.
+frame=adasind_199770.jpg | object_ref=L6 | cell=L_only | what=WRONG_CLASS | why= | rule_id=R04 | action=rework | note=Vật ở rìa trái có hai bánh nhưng bị gán Truck; nghi sai theo R04 và cần mở ảnh gốc xác nhận.
+frame=adasind_199770.jpg | object_ref=L3 | cell=L_only | what=SPURIOUS | why= | rule_id=R03 | action=rework | note=Box Pedestrian nằm trọn trong box ThreeWheeler L4; R03 nói người trong phương tiện khác không có box riêng.
+
+### round=rework
+frame=adasind_167700.jpg | object_ref=R2 | cell=LRM | what=MISSING | why=E1_annotator_error | rule_id=R01 | action=keep_with_reason | note=Bản v2 thu L11 về đúng xe đạp 755-975 nên R2 và M7 ghép lại được; đóng finding MISSING.
+frame=adasind_199770.jpg | object_ref=R6 | cell=LRM | what=MISSING | why=E1_annotator_error | rule_id=R01 | action=keep_with_reason | note=Bổ sung box xe đạp 109-144; cụm hai xe đạp rìa trái không còn missing.
+frame=adasind_199770.jpg | object_ref=L6+R5 | cell=LRM | what=WRONG_CLASS | why=E1_annotator_error | rule_id=R04 | action=keep_with_reason | note=Sửa lớp Truck thành Bike theo R04; cặp R5/R6 khớp đúng ở bản v2.
+frame=adasind_167700.jpg | object_ref=L9+L11 | cell=LRM | what=IGNORE_SCOPE | why=E1_annotator_error | rule_id=R09 | action=keep_with_reason | note=Bỏ box Pedestrian trong ego_body và thu box xe đạp khỏi lens_border; vùng don't-care không còn box.
+
+### submission/r3_diag/local_quality.md
+# Đối chiếu chất lượng cục bộ — rectangle
+
+Teaching reference, không phải gold set đã phê duyệt; không có điểm đạt tự động.
+Nguồn: export r1_craft đã khóa SHA256 `18f4d916ea939b105fd40f8f397d5c99cab4d144ea9b7e722f263bc8c0eeab96`; slice `B3-dense`.
+Ghép hình học greedy một-một theo IoU ≥ 0.50, rồi so class; H ≥ 40 px.
+Box trái nằm chủ yếu trong ignore_region reference không tính. Polygon, polyline, track không được chấm.
+Đây là phép tính offline của lab, không phải báo cáo hay kết quả tương đương CVAT Premium.
+
+Frame được tính: adasind_145860.jpg, adasind_167700.jpg, adasind_199770.jpg. Frame thiếu trong export: không.
+TP=12; FP=9; FN=8; số lần đối chiếu=27; mean IoU của TP=0.763.
+
+| Chỉ số | Micro | Macro | Nhãn thấp nhất |
+|---|---:|---:|---:|
+| accuracy | 0.444 | 0.874 | 0.741 |
+| precision | 0.571 | 0.620 | 0.333 |
+| recall | 0.600 | 0.633 | 0.167 |
+| jaccard | 0.414 | 0.444 | 0.125 |
+| dice | 0.585 | 0.591 | 0.222 |
+
+| Nhãn | TP | FP | FN | Accuracy | Precision | Recall | Jaccard | Dice |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Bike | 1 | 2 | 5 | 0.741 | 0.333 | 0.167 | 0.125 | 0.222 |
+| Car | 1 | 0 | 1 | 0.963 | 1.000 | 0.500 | 0.500 | 0.667 |
+| Pedestrian | 3 | 3 | 1 | 0.852 | 0.500 | 0.750 | 0.429 | 0.600 |
+| ThreeWheeler | 3 | 2 | 1 | 0.889 | 0.600 | 0.750 | 0.500 | 0.667 |
+| Truck | 4 | 2 | 0 | 0.926 | 0.667 | 1.000 | 0.667 | 0.800 |
+
+| Frame | TP | FP | FN | Accuracy | Precision | Recall |
+|---|---:|---:|---:|---:|---:|---:|
+| adasind_145860.jpg | 2 | 0 | 0 | 1.000 | 1.000 | 1.000 |
+| adasind_167700.jpg | 6 | 3 | 3 | 0.545 | 0.667 | 0.667 |
+| adasind_199770.jpg | 4 | 6 | 5 | 0.286 | 0.400 | 0.444 |
+
+Confusion matrix: hàng = teaching reference; cột = export đã khóa.
+`<missing>` là thiếu box; `<extra>` là box thừa. Xem `local_quality_confusion.csv`.
+
+| Reference \ Export | Bike | Car | Pedestrian | ThreeWheeler | Truck | <missing> |
+|---|---:|---:|---:|---:|---:|---:|
+| Bike | 1 | 0 | 0 | 0 | 1 | 4 |
+| Car | 0 | 1 | 0 | 0 | 1 | 0 |
+| Pedestrian | 0 | 0 | 3 | 0 | 0 | 1 |
+| ThreeWheeler | 0 | 0 | 0 | 3 | 0 | 1 |
+| Truck | 0 | 0 | 0 | 0 | 4 | 0 |
+| <extra> | 2 | 0 | 3 | 2 | 0 | 0 |
+
+Chi tiết xung đột trong `local_quality_conflicts.csv`; dữ liệu máy đọc trong `local_quality.json`.
+Mismatching label đóng góp một FP cho class vẽ và một FN cho class reference; attribute khác được báo riêng.
+Micro accuracy đếm mỗi cặp ghép sai class là một lần đối chiếu; Jaccard đếm cả FP và FN.
+Macro/worst bỏ nhãn không xuất hiện ở cả hai phía; chỉ số không có mẫu là N/A.
+
+### submission/r3_diag/local_quality_conflicts.csv
+frame,type,left,reference,left_label,reference_label,iou
+adasind_167700.jpg,mismatching_label,5,4,Truck,Car,0.877
+adasind_167700.jpg,mismatching_attributes,7,6,ThreeWheeler,ThreeWheeler,0.808
+adasind_167700.jpg,mismatching_attributes,3,3,Pedestrian,Pedestrian,0.737
+adasind_167700.jpg,mismatching_attributes,10,5,Bike,Bike,0.604
+adasind_167700.jpg,extra_annotation,2,,ThreeWheeler,,N/A
+adasind_167700.jpg,extra_annotation,4,,Bike,,N/A
+adasind_167700.jpg,missing_annotation,,2,,Bike,N/A
+adasind_167700.jpg,missing_annotation,,9,,Bike,N/A
+adasind_199770.jpg,mismatching_label,6,5,Truck,Bike,0.718
+adasind_199770.jpg,mismatching_attributes,11,2,ThreeWheeler,ThreeWheeler,0.646
+adasind_199770.jpg,extra_annotation,1,,Bike,,N/A
+adasind_199770.jpg,extra_annotation,3,,Pedestrian,,N/A
+adasind_199770.jpg,extra_annotation,9,,Pedestrian,,N/A
+adasind_199770.jpg,extra_annotation,10,,Pedestrian,,N/A
+adasind_199770.jpg,extra_annotation,12,,ThreeWheeler,,N/A
+adasind_199770.jpg,missing_annotation,,3,,Pedestrian,N/A
+adasind_199770.jpg,missing_annotation,,4,,ThreeWheeler,N/A
+adasind_199770.jpg,missing_annotation,,6,,Bike,N/A
+adasind_199770.jpg,missing_annotation,,9,,Bike,N/A
+
+### submission/p1_calib/compare.md
+# So sánh L với R
+
+Chỉ số L/R là thứ tự box cao ≥ H=40 trong từng frame, theo thứ tự XML; bắt đầu từ 1.
+Box L trong ignore_region được báo IGNORE_SCOPE, không tính SPURIOUS.
+
+## adasind_019560.jpg
+- L1 center SPURIOUS
+- L7+R3 edge WRONG_CLASS
+
+## Theo zone
+| zone | n_ref | matched | missing | spurious |
+|---|---|---|---|---|
+| center | 3 | 3 | 0 | 1 |
+| mid | 2 | 2 | 0 | 0 |
+| edge | 1 | 0 | 1 | 1 |

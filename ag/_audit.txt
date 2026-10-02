@@ -1,0 +1,88 @@
+## Cây submission/
+00_setup/doctor.txt                                                134 
+00_setup/mode.json                                                 320 
+00_setup/sensor_context.md                                         411 TODO/điền
+20_guideline_patch.md                                              344 TODO/điền
+30_escalation_ticket.md                                            269 TODO/điền
+40_decision_log.csv                                               2095 
+45_review_plan.md                                                  912 TODO/điền
+45_sampling_plan.csv                                              1040 
+46_gold_set_plan.md                                               1283 TODO/điền
+50_exit_ticket.md                                                  894 TODO/điền
+findings.csv                                                     14789 
+manifest.json                                                     6835 TODO/điền
+p1_calib/.gitkeep                                                    0 EMPTY
+p1_calib/annotations.xml                                         10791 
+p1_calib/compare.html                                             2906 
+p1_calib/compare.md                                                452 
+p1_calib/lock.txt                                                  224 
+p1_calib/reference.txt                                              75 
+parking/annotations.xml                                           1859 
+parking/observations.md                                            866 
+r1_craft/.gitkeep                                                    0 EMPTY
+r1_craft/annotations.xml                                         21962 
+r1_craft/compare.html                                             9770 
+r1_craft/compare.md                                                831 
+r1_craft/lock.txt                                                  236 
+r1_craft/reference.txt                                              81 
+r1_craft/selfqc.md                                                 451 
+r2_qa/.gitkeep                                                       0 EMPTY
+r2_qa/qa_overlay.html                                             5562 
+r2_qa/qa_review.md                                                 340 
+r3_diag/.gitkeep                                                     0 EMPTY
+r3_diag/iou_sweep.md                                               705 
+r3_diag/local_quality.json                                        8395 
+r3_diag/local_quality.md                                          2768 
+r3_diag/local_quality_conflicts.csv                               1185 
+r3_diag/local_quality_confusion.csv                                192 
+r3_diag/model_compare.html                                       12700 
+r3_diag/model_compare.md                                          1250 
+r3_diag/zone_table.md                                              833 TODO/điền
+README.md                                                         2462 TODO/điền
+rework/.gitkeep                                                      0 EMPTY
+rework/annotations-v2.xml                                        20586 
+rework/delta.md                                                   1828 
+rework/lock2.txt                                                   234 
+screenshots/.gitkeep                                                 0 EMPTY
+stretch/.gitkeep                                                     0 EMPTY
+
+## Gate bắt buộc
+OK      00_setup/doctor.txt 134 bytes 
+OK      00_setup/mode.json 320 bytes 
+LỖI     00_setup/sensor_context.md 411 bytes còn TODO
+OK      parking/annotations.xml 1859 bytes 
+OK      parking/observations.md 866 bytes 
+OK      p1_calib/annotations.xml 10791 bytes 
+OK      p1_calib/lock.txt 224 bytes 
+OK      p1_calib/reference.txt 75 bytes 
+OK      p1_calib/compare.md 452 bytes 
+OK      p1_calib/compare.html 2906 bytes 
+OK      r1_craft/annotations.xml 21962 bytes 
+OK      r1_craft/lock.txt 236 bytes 
+OK      r1_craft/selfqc.md 451 bytes 
+OK      r1_craft/reference.txt 81 bytes 
+OK      r1_craft/compare.md 831 bytes 
+OK      r1_craft/compare.html 9770 bytes 
+OK      r2_qa/qa_review.md 340 bytes 
+OK      r2_qa/qa_overlay.html 5562 bytes 
+OK      r3_diag/local_quality.md 2768 bytes 
+OK      r3_diag/local_quality.json 8395 bytes 
+OK      r3_diag/local_quality_conflicts.csv 1185 bytes 
+OK      r3_diag/local_quality_confusion.csv 192 bytes 
+OK      r3_diag/model_compare.md 1250 bytes 
+OK      r3_diag/model_compare.html 12700 bytes 
+LỖI     r3_diag/zone_table.md 833 bytes còn TODO
+OK      rework/annotations-v2.xml 20586 bytes 
+OK      rework/lock2.txt 234 bytes 
+OK      rework/delta.md 1828 bytes 
+OK      findings.csv 14789 bytes 
+THIẾU   10_error_card.md
+LỖI     20_guideline_patch.md 344 bytes còn TODO
+LỖI     30_escalation_ticket.md 269 bytes còn TODO
+OK      40_decision_log.csv 2095 bytes 
+LỖI     45_review_plan.md 912 bytes còn TODO
+OK      45_sampling_plan.csv 1040 bytes 
+LỖI     46_gold_set_plan.md 1283 bytes còn TODO
+LỖI     50_exit_ticket.md 894 bytes còn TODO
+
+thiếu 1 file

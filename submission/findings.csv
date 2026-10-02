@@ -1,50 +1,58 @@
 round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
-calib,C0,adasind_019560.jpg,L1,na,SPURIOUS,,,,,,,,
-calib,C0,adasind_019560.jpg,L7+R3,na,WRONG_CLASS,,,,,,,,
-r1_craft,B3-dense,adasind_167700.jpg,L9,na,IGNORE_SCOPE,,,,,,,,
-r1_craft,B3-dense,adasind_167700.jpg,L11,na,IGNORE_SCOPE,,,,,,,,
-r1_craft,B3-dense,adasind_167700.jpg,L2,na,SPURIOUS,,,,,,,,
-r1_craft,B3-dense,adasind_167700.jpg,L4+R9,na,BOX_GEOMETRY,,,,,,,,
-r1_craft,B3-dense,adasind_167700.jpg,L5+R4,na,WRONG_CLASS,,,,,,,,
-r1_craft,B3-dense,adasind_167700.jpg,R2,na,MISSING,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L7,na,IGNORE_SCOPE,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L8,na,IGNORE_SCOPE,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L1+R9,na,BOX_GEOMETRY,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L3,na,SPURIOUS,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L6+R5,na,WRONG_CLASS,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L9,na,SPURIOUS,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L10,na,SPURIOUS,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,L12,na,SPURIOUS,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,R3,na,MISSING,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,R4,na,MISSING,,,,,,,,
-r1_craft,B3-dense,adasind_199770.jpg,R6,na,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,L7+R6,LR_noM,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,L6+R7,LR_noM,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,L2,L_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,L4+M5,LM_noR,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,L5,L_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,R2+M7,RM_noL,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,R4+M4,RM_noL,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,R9,R_only,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_167700.jpg,M8,M_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L5+R7,LR_noM,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L11+R2,LR_noM,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L4+R8,LR_noM,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L1+M3,LM_noR,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L3+M9,LM_noR,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L6,L_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L9,L_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L10,L_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,L12,L_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,R3+M10,RM_noL,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,R4,R_only,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,R5,R_only,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,R6,R_only,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,R9,R_only,MISSING,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,M4,M_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,M5,M_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,M6,M_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,M8,M_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,M11,M_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,M12,M_only,SPURIOUS,,,,,,,,
-r3_diag,B3-dense,adasind_199770.jpg,M13,M_only,SPURIOUS,,,,,,,,
+calib,C0,adasind_019560.jpg,L1,na,SPURIOUS,E1_annotator_error,P2,annotator,R01,p1_calib/compare.md · zone=center,keep_with_reason,v1.0.0,Box thừa ở lượt căn chỉnh C0; C0 không thuộc slice B3-dense nên không đưa vào rework.
+calib,C0,adasind_019560.jpg,L7+R3,na,WRONG_CLASS,E2_guideline_gap,P1,guideline,R04,p1_calib/compare.md · zone=edge,keep_with_reason,v1.0.0,Ranh giới Car/Truck cho xe nhỏ ở rìa vòng kính chưa rõ trong R04; xem 20_guideline_patch.md.
+r1_craft,B3-dense,adasind_167700.jpg,L9,na,IGNORE_SCOPE,E1_annotator_error,P0,annotator,R09,screenshots/adasind_167700_ego_body_right.png · probe ignored=True,rework,v1.0.0,Box Pedestrian 917-1080 nằm gần trọn trong ego_body và lens_border; phải bỏ hoặc thu về phần nhìn thấy.
+r1_craft,B3-dense,adasind_167700.jpg,L11,na,IGNORE_SCOPE,E1_annotator_error,P0,annotator,R09,screenshots/adasind_167700_bike_trim_755_975.png · probe ignored=True,rework,v1.0.0,Cùng chiếc xe đạp dưới vòng kính với R2; box kéo dài vào ego_body nên thành don't-care và R2 bị báo MISSING.
+r1_craft,B3-dense,adasind_167700.jpg,L2,na,SPURIOUS,E1_annotator_error,P1,annotator,R02,r1_craft/compare.md · zone=mid · IoU với R6 chỉ 0.22,rework,v1.0.0,Box ThreeWheeler 161-261 chỉ là phần bên phải của chiếc ba bánh mà L7 đã vẽ trọn 25-214.
+r1_craft,B3-dense,adasind_167700.jpg,L4+R9,na,BOX_GEOMETRY,E1_annotator_error,P2,annotator,R02,screenshots/adasind_167700_bike_geometry_296_346.png · zone=mid,rework,v1.0.0,"Ghép được với R9 nhưng box thiếu phần trên của xe đạp; sửa về 296,942-346,1112."
+r1_craft,B3-dense,adasind_167700.jpg,L5+R4,na,WRONG_CLASS,E2_guideline_gap,P1,guideline,R04,r1_craft/compare.md · zone=center · L5 Truck vs R4 Car,rework,v1.0.0,Van nhỏ chở người ở xa: R04 nói van chở người là Car nhưng thiếu ví dụ biên nên dễ gọi Truck; đã sửa thành Car.
+r1_craft,B3-dense,adasind_167700.jpg,R2,na,MISSING,E1_annotator_error,P1,annotator,R01,screenshots/adasind_167700_bike_trim_755_975.png · zone=mid,rework,v1.0.0,Xe đạp 755-975 dưới vòng kính không có box in-scope; bổ sung bằng cách thu L11 về phần nhìn thấy.
+r1_craft,B3-dense,adasind_199770.jpg,L7,na,IGNORE_SCOPE,E1_annotator_error,P0,annotator,R09,screenshots/adasind_199770_ego_body_right.png · probe ignored=True,rework,v1.0.0,Box Pedestrian 954-1080 nằm trong ego_body và lens_border nên reference không xác nhận được.
+r1_craft,B3-dense,adasind_199770.jpg,L8,na,IGNORE_SCOPE,E1_annotator_error,P0,annotator,R09,screenshots/adasind_199770_ego_body_right.png · probe ignored=True,rework,v1.0.0,Box ThreeWheeler 925-1080 chồng lên vùng ego_body; vật chính nằm trong vùng don't-care.
+r1_craft,B3-dense,adasind_199770.jpg,L1+R9,na,BOX_GEOMETRY,E1_annotator_error,P2,annotator,R02,r1_craft/compare.md · zone=center · L1 rộng 127.9 so với R9 rộng 71,rework,v1.0.0,Box xe đạp rộng gấp đôi vật thật; tạo một FP cho Bike và kéo precision lớp Bike xuống 0.33.
+r1_craft,B3-dense,adasind_199770.jpg,L3,na,SPURIOUS,E1_annotator_error,P1,annotator,R03,r1_craft/compare.md · zone=mid · box nằm trọn trong L4/R8,rework,v1.0.0,Người trên xe ba bánh đã có box R8; box Pedestrian 350-369 là box riêng thừa theo R03.
+r1_craft,B3-dense,adasind_199770.jpg,L6+R5,na,WRONG_CLASS,E1_annotator_error,P1,annotator,R04,screenshots/adasind_199770_left_edge_bikes.png · zone=edge,rework,v1.0.0,Cụm hai xe đạp ở rìa trái bị gọi là Truck; sửa thành Bike và bổ sung box cho R6.
+r1_craft,B3-dense,adasind_199770.jpg,L9,na,SPURIOUS,E1_annotator_error,P2,annotator,R02,r1_craft/compare.md · zone=center · chồng lên L2 và L10,rework,v1.0.0,Ba box Pedestrian 611-704 nằm trên cùng một người; reference chỉ có một box R1.
+r1_craft,B3-dense,adasind_199770.jpg,L10,na,SPURIOUS,E1_annotator_error,P2,annotator,R02,r1_craft/compare.md · zone=center · chồng lên L2 và L9,rework,v1.0.0,Box thứ ba của cùng người đó; gộp về box L2 đã khớp R1.
+r1_craft,B3-dense,adasind_199770.jpg,L12,na,SPURIOUS,E1_annotator_error,P2,annotator,R02,r1_craft/compare.md · zone=center · nằm trong L4/R8,rework,v1.0.0,Box ThreeWheeler 373-464 tách đôi chiếc xe ba bánh đã có box L4 khớp R8.
+r1_craft,B3-dense,adasind_199770.jpg,R3,na,MISSING,E1_annotator_error,P1,annotator,R01,screenshots/adasind_199770_ego_body_right.png · probe ignored=False,rework,v1.0.0,Pedestrian 847-905 cao 118 px nằm ngoài vùng ignore nhưng bị bỏ sót; đã bổ sung trong bản v2.
+r1_craft,B3-dense,adasind_199770.jpg,R4,na,MISSING,E2_guideline_gap,P2,guideline,R09,screenshots/adasind_199770_ego_body_right.png · probe ignored=True,keep_with_reason,v1.0.0,R4 nằm hơn nửa diện tích trong ego_body nên theo R09 là don't-care; giữ không vẽ và đề xuất làm rõ ngưỡng.
+r1_craft,B3-dense,adasind_199770.jpg,R6,na,MISSING,E1_annotator_error,P1,annotator,R01,screenshots/adasind_199770_left_edge_bikes.png · zone=edge,rework,v1.0.0,Xe đạp thứ hai 109-144 trong cụm rìa trái bị bỏ sót; đã bổ sung trong bản v2.
+r2_qa,B3-dense,adasind_167700.jpg,L9,L_only,ATTRIBUTE,,P2,annotator,R05,r2_qa/qa_overlay.html · data/_qa/B3-dense.xml box 9,keep_with_reason,v1.0.0,R11: attribute là phán đoán; box này truncated=true đúng vì bị vòng kính cắt chứ không bị vật khác che.
+r2_qa,B3-dense,adasind_199770.jpg,L8,L_only,IGNORE_SCOPE,,P0,annotator,R09,r2_qa/qa_overlay.html · data/_qa/B3-dense.xml box 8,rework,v1.0.0,Box nằm trong vùng ego_body/lens_border nên người soát không thể xác nhận đúng sai; trả lại người gán để bỏ.
+r2_qa,B3-dense,adasind_199770.jpg,L6,L_only,WRONG_CLASS,,P1,annotator,R04,r2_qa/qa_overlay.html · data/_qa/B3-dense.xml box 6,rework,v1.0.0,Vật ở rìa trái có hai bánh nhưng bị gán Truck; nghi sai theo R04 và cần mở ảnh gốc xác nhận.
+r2_qa,B3-dense,adasind_199770.jpg,L3,L_only,SPURIOUS,,P1,annotator,R03,r2_qa/qa_overlay.html · data/_qa/B3-dense.xml box 3,rework,v1.0.0,Box Pedestrian nằm trọn trong box ThreeWheeler L4; R03 nói người trong phương tiện khác không có box riêng.
+r3_diag,B3-dense,adasind_167700.jpg,L7+R6,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,r3_diag/model_compare.md · zone=edge,escalate,v1.0.0,Model gọi xe ba bánh rìa trái là Truck (M8) nên không ghép được với L7/R6; lỗi mapping lớp của model.
+r3_diag,B3-dense,adasind_167700.jpg,L6+R7,LR_noM,MISSING,E4_model_domain,P1,ai_team,R01,r3_diag/model_compare.md · zone=center,escalate,v1.0.0,Xe tải nhỏ 467-545 có ở L và R nhưng model không có box nào trong vùng này.
+r3_diag,B3-dense,adasind_167700.jpg,L2,L_only,SPURIOUS,E1_annotator_error,P2,annotator,R02,r3_diag/model_compare.md · zone=mid,rework,v1.0.0,Box tách đôi chiếc ba bánh của L7; model và reference đều không có box riêng ở đây.
+r3_diag,B3-dense,adasind_167700.jpg,L4+M5,LM_noR,SPURIOUS,E5_unresolved,P2,qa,R02,r3_diag/model_compare.md · zone=mid,keep_with_reason,v1.0.0,Người và model cùng thấy xe đạp 309-362 nhưng R9 lệch nửa trên; chưa đủ bằng chứng nói ai sai — kiểm tiếp IoU 0.3.
+r3_diag,B3-dense,adasind_167700.jpg,L5,L_only,SPURIOUS,E2_guideline_gap,P1,guideline,R04,r3_diag/model_compare.md · zone=center,rework,v1.0.0,Sau khi sửa class về Car theo R04 box này ghép được với R4/M4; trước rework nó bị bỏ rơi trong ghép ba chiều.
+r3_diag,B3-dense,adasind_167700.jpg,R2+M7,RM_noL,MISSING,E1_annotator_error,P1,annotator,R01,r3_diag/model_compare.md · zone=mid,rework,v1.0.0,Người và model đều thấy xe đạp 755-975 nhưng box người vẽ kéo vào ego_body nên bị loại; bản v2 đã thu lại.
+r3_diag,B3-dense,adasind_167700.jpg,R4+M4,RM_noL,MISSING,E2_guideline_gap,P1,guideline,R04,r3_diag/model_compare.md · zone=center,rework,v1.0.0,Cả R và M gọi Car còn người vẽ Truck; đã sửa thành Car theo R04.
+r3_diag,B3-dense,adasind_167700.jpg,R9,R_only,MISSING,E1_annotator_error,P1,annotator,R01,r3_diag/model_compare.md · zone=mid,rework,v1.0.0,"Xe đạp 296-346 cao 170 px; người ghép được ở lượt L/R nhưng model không có, bản v2 đã chỉnh hình học khớp R9."
+r3_diag,B3-dense,adasind_167700.jpg,M8,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R04,r3_diag/model_compare.md · zone=mid,escalate,v1.0.0,Box Truck của model trùm lên chiếc ba bánh L7/R6 — sai lớp chứ không phải vật thừa thật.
+r3_diag,B3-dense,adasind_199770.jpg,L5+R7,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,r3_diag/model_compare.md · zone=mid,escalate,v1.0.0,Xe tải 211-275 có ở L và R nhưng model gán Car (M6) nên cặp ba chiều gãy.
+r3_diag,B3-dense,adasind_199770.jpg,L11+R2,LR_noM,MISSING,E4_model_domain,P1,ai_team,R01,r3_diag/model_compare.md · zone=edge,escalate,v1.0.0,Xe ba bánh ở mép trái có ở L và R; model không có box khớp (M4/M8 lệch vùng).
+r3_diag,B3-dense,adasind_199770.jpg,L4+R8,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,r3_diag/model_compare.md · zone=center,escalate,v1.0.0,Model gọi xe ba bánh này là Car (M12) nên không ghép được với L4/R8.
+r3_diag,B3-dense,adasind_199770.jpg,L1+M3,LM_noR,SPURIOUS,E5_unresolved,P2,qa,R02,r3_diag/model_compare.md · zone=center,keep_with_reason,v1.0.0,Người và model cùng thấy xe đạp 538-666 nhưng reference không có box; cần mở lại ảnh và soát reference trước khi kết luận.
+r3_diag,B3-dense,adasind_199770.jpg,L3+M9,LM_noR,SPURIOUS,E2_guideline_gap,P2,guideline,R03,r3_diag/model_compare.md · zone=mid,rework,v1.0.0,Người và model cùng vẽ box riêng cho người trong xe ba bánh R8; R03 nói không có box riêng.
+r3_diag,B3-dense,adasind_199770.jpg,L6,L_only,SPURIOUS,E2_guideline_gap,P1,guideline,R04,r3_diag/model_compare.md · zone=edge,rework,v1.0.0,Cụm hai xe đạp rìa trái bị gọi Truck nên lệch cả L6 lẫn R5/R6; đã sửa thành Bike trong bản v2.
+r3_diag,B3-dense,adasind_199770.jpg,L9,L_only,SPURIOUS,E1_annotator_error,P2,annotator,R02,r3_diag/model_compare.md · zone=center,rework,v1.0.0,Box trùng thứ hai trên cùng người với L2/L10; model chỉ có một box khớp.
+r3_diag,B3-dense,adasind_199770.jpg,L10,L_only,SPURIOUS,E1_annotator_error,P2,annotator,R02,r3_diag/model_compare.md · zone=center,rework,v1.0.0,Box trùng thứ ba trên cùng người đó; bản v2 chỉ giữ box L2.
+r3_diag,B3-dense,adasind_199770.jpg,L12,L_only,SPURIOUS,E1_annotator_error,P2,annotator,R02,r3_diag/model_compare.md · zone=center,rework,v1.0.0,Box tách đôi chiếc xe ba bánh đã có L4/R8; model không có box riêng ở 373-464.
+r3_diag,B3-dense,adasind_199770.jpg,R3+M10,RM_noL,MISSING,E1_annotator_error,P1,annotator,R01,r3_diag/model_compare.md · zone=mid,rework,v1.0.0,Người đi bộ 847-905 nằm ngoài vùng ignore và cả R lẫn M đều có; bản v2 đã bổ sung box.
+r3_diag,B3-dense,adasind_199770.jpg,R4,R_only,MISSING,E2_guideline_gap,P2,guideline,R09,r3_diag/model_compare.md · zone=mid,escalate,v1.0.0,"R4 nằm hơn nửa diện tích trong ego_body/lens_border nên theo R09 người gán không được vẽ; matcher chỉ miễn trừ một phía nên reference vẫn bị báo thiếu. Luật cần đối xứng — chuyển guideline, xem 30_escalation_ticket.md Ticket 2 và 40_decision_log.csv D06."
+r3_diag,B3-dense,adasind_199770.jpg,R5,R_only,MISSING,E1_annotator_error,P1,annotator,R01,r3_diag/model_compare.md · zone=edge,rework,v1.0.0,Xe đạp 91-119 ở rìa trái bị gọi Truck; bản v2 sửa lớp và giữ đúng hình học.
+r3_diag,B3-dense,adasind_199770.jpg,R6,R_only,MISSING,E1_annotator_error,P1,annotator,R01,r3_diag/model_compare.md · zone=edge,rework,v1.0.0,Xe đạp thứ hai 109-144 hoàn toàn bị bỏ sót; đã bổ sung trong bản v2.
+r3_diag,B3-dense,adasind_199770.jpg,R9,R_only,MISSING,E5_unresolved,P2,qa,R02,r3_diag/model_compare.md · zone=center,keep_with_reason,v1.0.0,Chỉ reference có box 539-610; người vẽ hơi rộng và model bỏ qua — cần mở lại ảnh để chốt ranh giới xe đạp.
+r3_diag,B3-dense,adasind_199770.jpg,M4,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R01,r3_diag/model_compare.md · zone=edge,escalate,v1.0.0,Box model nằm trong vùng lens_border/ego_body; không có vật tương ứng ở L và R.
+r3_diag,B3-dense,adasind_199770.jpg,M5,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R04,r3_diag/model_compare.md · zone=edge,escalate,v1.0.0,Model vẽ một box Bike rộng 76-146 trong khi cụm xe đạp thật chỉ 91-144.
+r3_diag,B3-dense,adasind_199770.jpg,M6,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R04,r3_diag/model_compare.md · zone=mid,escalate,v1.0.0,Model gọi xe tải L5/R7 là Car — sai lớp chứ không phải box thừa.
+r3_diag,B3-dense,adasind_199770.jpg,M8,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R01,r3_diag/model_compare.md · zone=edge,escalate,v1.0.0,Box model trùm vào vùng lens_border mép trái; không có vật tương ứng.
+r3_diag,B3-dense,adasind_199770.jpg,M11,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,r3_diag/model_compare.md · zone=center,escalate,v1.0.0,Model tách người 611-704 thành nhiều box; reference chỉ có một box R1.
+r3_diag,B3-dense,adasind_199770.jpg,M12,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R04,r3_diag/model_compare.md · zone=center · screenshots/adasind_199770_model_car_vs_threewheeler.png,escalate,v1.0.0,Box Car của model chính là xe ba bánh R8/L4 — sai lớp theo R04.
+r3_diag,B3-dense,adasind_199770.jpg,M13,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,r3_diag/model_compare.md · zone=center,escalate,v1.0.0,Box Pedestrian thừa trong vùng người đi bộ 611-704 đã có M10/M11.
+rework,B3-dense,adasind_167700.jpg,R2,LRM,MISSING,E1_annotator_error,P1,annotator,R01,rework/delta.md · zone=mid,keep_with_reason,v1.1.0,Bản v2 thu L11 về đúng xe đạp 755-975 nên R2 và M7 ghép lại được; đóng finding MISSING.
+rework,B3-dense,adasind_199770.jpg,R6,LRM,MISSING,E1_annotator_error,P1,annotator,R01,rework/delta.md · zone=edge,keep_with_reason,v1.1.0,Bổ sung box xe đạp 109-144; cụm hai xe đạp rìa trái không còn missing.
+rework,B3-dense,adasind_199770.jpg,L6+R5,LRM,WRONG_CLASS,E1_annotator_error,P1,annotator,R04,rework/delta.md · zone=edge,keep_with_reason,v1.1.0,Sửa lớp Truck thành Bike theo R04; cặp R5/R6 khớp đúng ở bản v2.
+rework,B3-dense,adasind_167700.jpg,L9+L11,LRM,IGNORE_SCOPE,E1_annotator_error,P0,annotator,R09,rework/delta.md · zone=mid,keep_with_reason,v1.1.0,Bỏ box Pedestrian trong ego_body và thu box xe đạp khỏi lens_border; vùng don't-care không còn box.

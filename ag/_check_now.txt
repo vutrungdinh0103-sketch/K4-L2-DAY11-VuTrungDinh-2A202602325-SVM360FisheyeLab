@@ -1,0 +1,25 @@
+﻿Γ£ù D├▓ng 21: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù D├▓ng 22: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù D├▓ng 23: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù D├▓ng 24: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù D├▓ng 25: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù D├▓ng 26: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù D├▓ng 27: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù D├▓ng 28: r3_diag thiß║┐u why, severity, owner, action
+Γ£ù ΓÇª c├▓n 22 lß╗ùi d├▓ng findings nß╗»a (sß╗¡a c├íc d├▓ng tr├¬n rß╗ôi chß║íy lß║íi)
+Γ£ù findings cß║ºn ΓëÑ3 d├▓ng vai r2_qa
+Γ£ù decision log cß║ºn ΓëÑ4 entry v├á ΓëÑ1 escalated
+Γ£ù 45_sampling_plan.csv ch╞░a phß║úi bß║úng ph├ón bß╗ò hß╗úp lß╗ç
+Γ£ù C├▓n TODO trong 00_setup/sensor_context.md
+Γ£ù C├▓n TODO trong r3_diag/zone_table.md
+Γ£ù Thiß║┐u file rework/annotations-v2.xml
+Γ£ù Thiß║┐u file rework/lock2.txt
+Γ£ù Thiß║┐u file rework/delta.md
+Γ£ù Thiß║┐u file 10_error_card.md (chß║íy python3 lab11.py card)
+Γ£ù C├▓n TODO trong 20_guideline_patch.md
+Γ£ù C├▓n TODO trong 30_escalation_ticket.md
+Γ£ù C├▓n TODO trong 45_review_plan.md
+Γ£ù C├▓n TODO trong 45_sampling_plan.csv
+Γ£ù C├▓n TODO trong 46_gold_set_plan.md
+Γ£ù C├▓n TODO trong 50_exit_ticket.md
+Γ£ù screenshots cß║ºn ΓëÑ2 ß║únh

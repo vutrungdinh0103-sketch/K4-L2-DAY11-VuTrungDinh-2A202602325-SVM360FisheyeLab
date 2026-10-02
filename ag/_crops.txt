@@ -1,0 +1,6 @@
+adasind_167700_a_bike_center.png (1080, 1920) (250, 880, 400, 1200)
+adasind_167700_b_bike_right.png (1080, 1920) (700, 900, 1080, 1400)
+adasind_199770_c_bikes_edge.png (1080, 1920) (40, 760, 240, 960)
+adasind_199770_d_right_ego.png (1080, 1920) (780, 760, 1080, 1400)
+adasind_199770_e_threewheel.png (1080, 1920) (300, 760, 560, 1010)
+adasind_199770_f_peds_center.png (1080, 1920) (540, 780, 730, 1060)

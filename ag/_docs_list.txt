@@ -1,0 +1,20 @@
+﻿
+Name                      Length
+----                      ------
+00-START-HERE-vi.md          680
+01-guide-cvat-vi.md         6079
+02-rules-vi.md              4736
+03-roles-rotation-vi.md     1862
+04-selfqc-checklist-vi.md   1931
+05-taxonomy-vi.md           5425
+06-misconceptions-vi.md     2608
+07-escalation-vi.md         1313
+08-degrade-vi.md            1960
+09-support-stretch-vi.md    2084
+10-svm360-reading-vi.md     3633
+11-parking-lines-vi.md      3742
+DATA_LICENSES.md            3925
+GLOSSARY-vi.md              2019
+rubric-vi.md                 291
+
+

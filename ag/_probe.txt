@@ -1,0 +1,19 @@
+== adasind_167700.jpg
+   ignore ego_body bbox=(922,747)-(1077,1443) npoints=4
+   ignore lens_border bbox=(0,0)-(1080,983) npoints=40
+   ignore lens_border bbox=(0,983)-(1080,1920) npoints=41
+   cand (755, 1049, 975, 1283) ignored=False
+   cand (757, 1047, 977, 1285) ignored=False
+   cand (917, 727, 1080, 1416) ignored=True
+   cand (755, 950, 1080, 1293) ignored=True
+   cand (296, 942, 346, 1112) ignored=False
+== adasind_199770.jpg
+   ignore ego_body bbox=(924,813)-(1080,1552) npoints=4
+   ignore lens_border bbox=(0,0)-(1080,996) npoints=40
+   ignore lens_border bbox=(0,996)-(1080,1920) npoints=41
+   cand (847, 829, 905, 947) ignored=False
+   cand (935, 990, 1080, 1300) ignored=True
+   cand (935, 988, 1082, 1302) ignored=True
+   cand (954, 852, 1080, 1553) ignored=True
+   cand (926, 815, 1080, 1306) ignored=True
+   cand (109, 839, 144, 882) ignored=False

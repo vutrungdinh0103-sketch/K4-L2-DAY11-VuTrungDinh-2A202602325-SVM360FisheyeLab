@@ -1,0 +1,99 @@
+﻿              "Export: CVAT for images 1.1", "Box prefill: " + (", ".join(imported) or "không có")]
+    for item in hints.get(slice_id, []):
+        lines.append("K12: %s %s %s (%s)" % (item.get("frame"), item.get("label"), item.get("zone"), item.get("hint")))
+    return "\n".join(lines)
+
+
+def degrade(base, step):
+    if step not in DEGRADE_STEPS:
+        raise LabError("STEP không hợp lệ; chọn: " + ", ".join(sorted(DEGRADE_STEPS)))
+    path = base / "submission" / "00_setup" / "mode.json"
+    state = read_json(path) if path.is_file() else {}
+    entries = state.setdefault("degrade", [])
+    if step not in entries:
+        entries.append(step)
+    write_json(path, state)
+    return "Đã ghi degrade: " + step
+
+
+def qa(base, slice_id, source, verification_code):
+    if slice_id not in slices(base):
+        raise LabError("Slice QA không hợp lệ")
+    data = xml_bytes(Path(source))
+    actual = code(digest(data))
+    if verification_code.upper() != actual:
+        raise LabError("CODE không khớp file: cần %s" % actual)
+    doc = parse_bytes(data)
+    frames = slices(base)[slice_id]
+    if set(doc["images"]) - set(frames):
+        raise LabError("File QA có ảnh ngoài slice")
+    retained = base / "data" / "_qa" / (slice_id + ".xml")
+    retained.parent.mkdir(parents=True, exist_ok=True)
+    retained.write_bytes(data)
+    sections = []
+    for frame in frames:
+        size = doc["images"].get(frame, {"size": (1920, 1080)})["size"]
+        sections.append(_overlay(frame, size, {"L": scoped(doc, frame)}, "../../assets/images/" + frame))
+    folder = base / "submission" / "r2_qa"
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / "qa_overlay.html").write_text(_html("QA " + slice_id, sections), encoding="utf-8")
+    review = folder / "qa_review.md"
+    if not review.is_file():
+        review.write_text("# QA review · %s\n\nMã khóa: %s\n\n| frame | object_ref | rule_id | nhận xét |\n|---|---|---|---|\n| TODO | TODO | TODO | TODO |\n\nGhi finding r2_qa: cell=L_only, rule_id có giá trị, why để trống.\n" %
+                          (slice_id, actual), encoding="utf-8")
+    return folder / "qa_overlay.html"
+
+
+def status(base):
+    sub = base / "submission"
+    ensure_late_templates(base)
+    def complete(relative):
+        path = sub / relative
+        return path.is_file() and path.stat().st_size > 0 and "TODO" not in path.read_text(encoding="utf-8", errors="replace")
+
+    doctor_path = sub / "00_setup" / "doctor.txt"
+    if not complete("00_setup/doctor.txt") or (doctor_path.is_file() and any(
+            line.startswith("✗") for line in doctor_path.read_text(encoding="utf-8").splitlines())):
+        return "python3 lab11.py doctor"
+    if not complete("00_setup/mode.json"):
+        return "python3 lab11.py mode --members ten"
+    mode_state = read_json(sub / "00_setup" / "mode.json")
+    own_slice = mode_state.get("slice") or mode_state.get("own_slice")
+    if not complete("00_setup/sensor_context.md"):
+        return "Điền submission/00_setup/sensor_context.md"
+    if not complete("parking/annotations.xml"):
+        return "Mở docs/11-parking-lines-vi.md → python3 lab11.py parking --file <file-export-zip>"
+    if not complete("parking/observations.md"):
+        return "Điền submission/parking/observations.md"
+    if not complete("p1_calib/lock.txt"):
+        if mode_state.get("current_slice") != "C0":
+            return "python3 lab11.py cvat C0"
+        return "python3 lab11.py lock calib exports/c0.zip"
+    if not complete("p1_calib/reference.txt"):
+        return "python3 lab11.py reference calib"
+    if not complete("p1_calib/compare.md"):
+        return "python3 lab11.py compare calib"
+    if mode_state.get("current_slice") != own_slice or not own_slice:
+        return "python3 lab11.py cvat %s" % (own_slice or "<slice>")
+    if not (base / "exports" / "r1-draft.xml").is_file() and not complete("r1_craft/lock.txt"):
+        return "Export bản nháp từ CVAT → python3 lab11.py draft <duong-dan-file-zip>"
+    selfqc_path = sub / "r1_craft" / "selfqc.md"
+    selfqc_text = selfqc_path.read_text(encoding="utf-8") if selfqc_path.is_file() else ""
+    if "k12" not in mode_state.get("degrade", []) and "Fill ratio (K12)" not in selfqc_text:
+        return "python3 lab11.py fill r1_craft"
+    if "# Tự soát" not in selfqc_text or "## Checklist thủ công" not in selfqc_text:
+        return "python3 lab11.py selfqc r1_craft"
+    checklist = [line for line in selfqc_text.splitlines() if line.startswith("- [")]
+    if len(checklist) < 9 or any(not line.lower().startswith("- [x]") for line in checklist):
+        return "Hoàn thành checklist trong submission/r1_craft/selfqc.md"
+    if not complete("r1_craft/lock.txt"):
+        return "python3 lab11.py lock r1_craft exports/r1.zip"
+    if not complete("r2_qa/qa_review.md"):
+        if (sub / "r2_qa" / "qa_review.md").is_file():
+            return "Điền submission/r2_qa/qa_review.md"
+        return "python3 lab11.py qa --slice %s --file annotations.xml --code XXXX-XXXX" % own_slice
+    if not complete("r1_craft/reference.txt"):
+        return "python3 lab11.py reference r1_craft"
+    if not complete("r1_craft/compare.md"):
+        return "python3 lab11.py compare r1_craft"
+    quality_files = ("r3_diag/local_quality.md", "r3_diag/local_quality.json",

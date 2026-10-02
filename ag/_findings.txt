@@ -1,0 +1,59 @@
+1| """Append-only learner findings CSV."""
+2| import csv
+3| 
+4| HEADER = "round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note".split(",")
+5| ENUMS = {
+6|     "round": {"calib", "r1_craft", "r2_qa", "r3_diag", "rework"},
+7|     "cell": {"LRM", "LR_noM", "LM_noR", "L_only", "RM_noL", "R_only", "M_only", "na"},
+8|     "what": {"MISSING", "SPURIOUS", "WRONG_CLASS", "BOX_GEOMETRY", "DUPLICATE", "ATTRIBUTE", "IGNORE_SCOPE", "STRUCTURE"},
+9|     "why": {"E0_reference_defect", "E1_annotator_error", "E2_guideline_gap", "E3_data_defect", "E4_model_domain", "E5_unresolved"},
+10|     "severity": {"P0", "P1", "P2", "P3"},
+11|     "owner": {"annotator", "guideline", "data_ops", "ai_team", "qa"},
+12|     "action": {"rework", "keep_with_reason", "escalate"},
+13| }
+14| 
+15| 
+16| def read_rows(path):
+17|     if not path.is_file():
+18|         return []
+19|     with path.open(encoding="utf-8-sig", newline="") as stream:
+20|         return [row for row in csv.DictReader(stream) if any((v or "").strip() for v in row.values())]
+21| 
+22| 
+23| def append_rows(path, rows):
+24|     path.parent.mkdir(parents=True, exist_ok=True)
+25|     existing = read_rows(path)
+26|     keys = {(r.get("round"), r.get("frame"), r.get("object_ref"), r.get("what")) for r in existing}
+27|     if not path.is_file():
+28|         with path.open("w", encoding="utf-8", newline="") as stream:
+29|             csv.writer(stream, lineterminator="\r\n").writerow(HEADER)
+30|     with path.open("a", encoding="utf-8", newline="") as stream:
+31|         writer = csv.DictWriter(stream, HEADER, extrasaction="ignore", lineterminator="\r\n")
+32|         for row in rows:
+33|             key = tuple(row.get(k) for k in ("round", "frame", "object_ref", "what"))
+34|             if key not in keys:
+35|                 writer.writerow({name: row.get(name, "") for name in HEADER})
+36|                 keys.add(key)
+37| 
+38| 
+39| def validate_rows(rows):
+40|     errors = []
+41|     for number, row in enumerate(rows, 2):
+42|         values = {field: (row.get(field) or "").strip() for field in HEADER}
+43|         for field, allowed in ENUMS.items():
+44|             value = values[field]
+45|             if value and value not in allowed:
+46|                 errors.append("Dòng %d: %s không hợp lệ: %s" % (number, field, value))
+47|         for field in ("round", "slice", "frame", "object_ref", "cell", "what"):
+48|             if not values[field]:
+49|                 errors.append("Dòng %d: thiếu %s" % (number, field))
+50|         if values["round"] == "r2_qa":
+51|             if not values["rule_id"]:
+52|                 errors.append("Dòng %d: r2_qa thiếu rule_id" % number)
+53|             if values["why"]:
+54|                 errors.append("Dòng %d: r2_qa cần để trống why" % number)
+55|         if values["round"] == "r3_diag":
+56|             missing = [f for f in ("why", "severity", "owner", "action") if not values[f]]
+57|             if missing:
+58|                 errors.append("Dòng %d: r3_diag thiếu %s" % (number, ", ".join(missing)))
+59|     return errors

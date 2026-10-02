@@ -1,0 +1,29 @@
+# Q qa :: data/_qa/B3-dense.xml
+== adasind_145860.jpg
+  1    Car              42.8   861.5   105.6    83.2  mid    occl=false trunc=false src=manual
+  2    Truck           394.0   798.0    91.0   114.0  center occl=false trunc=false src=file
+== adasind_167700.jpg
+  1    Truck           552.0   870.5    54.3    67.3  center occl=true trunc=false src=manual
+  2    ThreeWheeler    161.4   930.3    99.6   168.7  mid    occl=true trunc=false src=manual
+  3    Pedestrian      263.8   927.0    78.0   172.1  mid    occl=true trunc=false src=manual
+  4    Bike            309.5   980.7    52.9   125.1  mid    occl=false trunc=false src=manual
+  5    Truck           581.0   872.8   119.3   127.5  center occl=false trunc=false src=manual
+  6    Truck           485.5   899.1    60.2    50.5  center occl=false trunc=false src=manual
+  7    ThreeWheeler     25.5   920.2   188.8   260.0  edge   occl=false trunc=false src=manual
+  8    Pedestrian      359.2   881.0   127.9   329.8  center occl=false trunc=false src=manual
+  9    Pedestrian      917.4   727.0   162.6   689.2  mid    occl=false trunc=true src=manual
+  10   Bike            361.1   969.1   249.8   212.8  center occl=true trunc=false src=manual
+  11   Bike            755.1   949.7   324.9   342.9  mid    occl=true trunc=true src=manual
+== adasind_199770.jpg
+  1    Bike            538.3   892.0   127.9   113.8  center occl=true trunc=false src=manual
+  2    Pedestrian      615.4   830.4    86.6   191.5  center occl=false trunc=false src=manual
+  3    Pedestrian      350.8   830.2    18.6    55.8  mid    occl=false trunc=false src=manual
+  4    ThreeWheeler    424.5   817.0   105.0   133.3  center occl=false trunc=false src=manual
+  5    Truck           224.0   814.4    49.1    47.5  mid    occl=false trunc=false src=manual
+  6    Truck            93.0   847.5    24.4    55.9  edge   occl=false trunc=false src=manual
+  7    Pedestrian      954.5   851.9   125.5   701.6  mid    occl=false trunc=true src=manual
+  8    ThreeWheeler    925.8   814.9   154.2   491.3  mid    occl=false trunc=true src=manual
+  9    Pedestrian      660.9   834.3    43.5   143.1  center occl=true trunc=false src=manual
+  10   Pedestrian      611.1   838.4    43.5   135.6  center occl=true trunc=false src=manual
+  11   ThreeWheeler      0.0   782.9    80.2   153.7  edge   occl=false trunc=true src=manual
+  12   ThreeWheeler    373.7   822.5    91.2    81.9  center occl=true trunc=false src=manual

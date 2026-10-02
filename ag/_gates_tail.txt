@@ -1,0 +1,54 @@
+﻿                failures.append("Thiếu file %s (chạy python3 lab11.py model)" % relative)
+            elif relative == "10_error_card.md":
+                failures.append("Thiếu file %s (chạy python3 lab11.py card)" % relative)
+            else:
+                failures.append("Thiếu file " + relative)
+            continue
+        data = path.read_bytes()
+        if not data.strip():
+            failures.append("File rỗng " + relative)
+        if b"TODO" in data:
+            failures.append("Còn TODO trong " + relative)
+        entry = {"file": relative, "lines": len(data.splitlines()), "sha256": digest(data)}
+        if relative.endswith("lock.txt") or relative.endswith("lock2.txt"):
+            entry["locked_at"] = lock_values(path).get("locked_at", "")
+        if relative.endswith("reference.txt"):
+            entry["lock_before_reveal"] = "lock_before_reveal: true" in data.decode("utf-8", "replace")
+        manifest.append(entry)
+    doctor_path = sub / "00_setup" / "doctor.txt"
+    if doctor_path.is_file() and any(line.startswith("✗") for line in doctor_path.read_text(encoding="utf-8").splitlines()):
+        failures.append("doctor còn lỗi; chạy python3 lab11.py doctor lại sau khi sửa môi trường")
+    quality_path = sub / "r3_diag" / "local_quality.json"
+    if quality_path.is_file():
+        try:
+            report = json.loads(quality_path.read_text(encoding="utf-8"))
+            locked = lock_values(sub / "r1_craft" / "lock.txt")
+            if report.get("locked_sha256") != locked.get("sha256"):
+                failures.append("local_quality cũ so với bản export đã khóa; chạy python3 lab11.py local-quality lại")
+        except (OSError, ValueError):
+            failures.append("local_quality.json không hợp lệ; chạy python3 lab11.py local-quality lại")
+    parking_path = sub / "parking" / "annotations.xml"
+    if parking_path.is_file():
+        from .parking import validate_export
+        try:
+            validate_export(parking_path.read_bytes())
+        except (LabError, OSError, ValueError) as exc:
+            failures.append("Parking export không hợp lệ: " + str(exc))
+    craft_path = sub / "r1_craft" / "annotations.xml"
+    if craft_path.is_file() and mode.get("slice") and (base / "assets" / "slices.json").is_file():
+        try:
+            frame_list = slices(base)[mode["slice"]]
+            required = set(frame_list[:2] if "frame3" in mode.get("degrade", []) else frame_list)
+            missing = required - set(parse_file(craft_path)["images"])
+            if missing:
+                failures.append("r1_craft thiếu frame bắt buộc: " + ", ".join(sorted(missing)))
+        except (LabError, KeyError, ValueError) as exc:
+            failures.append("Không kiểm được frame r1_craft: " + str(exc))
+    delta = sub / "rework" / "delta.md"
+    if delta.is_file() and len(re.findall(r"\d+", delta.read_text(encoding="utf-8"))) < 2:
+        failures.append("delta.md cần số trước và sau")
+    shots = list((sub / "screenshots").glob("*")) if (sub / "screenshots").is_dir() else []
+    if len([p for p in shots if p.is_file() and not p.name.startswith(".")]) < 2:
+        failures.append("screenshots cần ≥2 ảnh")
+    write_json(sub / "manifest.json", {"files": manifest, "failed_gates": failures})
+    return failures

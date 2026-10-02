@@ -1,0 +1,54 @@
+﻿
+Name               Length
+----               ------
+adasind_001320.jpg 373593
+adasind_006840.jpg 367924
+adasind_010260.jpg 345479
+adasind_012570.jpg 368577
+adasind_014670.jpg 337068
+adasind_019560.jpg 373807
+adasind_032280.jpg 381819
+adasind_034080.jpg 343348
+adasind_036720.jpg 288603
+adasind_043110.jpg 380661
+adasind_048720.jpg 374765
+adasind_056040.jpg 280302
+adasind_060000.jpg 332174
+adasind_062370.jpg 334107
+adasind_069450.jpg 401703
+adasind_073020.jpg 419043
+adasind_074520.jpg 381464
+adasind_082170.jpg 333789
+adasind_086220.jpg 410652
+adasind_091830.jpg 392967
+adasind_098190.jpg 444104
+adasind_102750.jpg 316080
+adasind_117120.jpg 366650
+adasind_117210.jpg 342775
+adasind_123090.jpg 389444
+adasind_128310.jpg 256979
+adasind_140160.jpg 293502
+adasind_145860.jpg 241814
+adasind_152940.jpg 368838
+adasind_167700.jpg 378594
+adasind_184050.jpg 376191
+adasind_199770.jpg 382329
+adasind_212280.jpg 415661
+adasind_212700.jpg 286189
+adasind_223530.jpg 306026
+adasind_230910.jpg 361649
+adasind_236370.jpg 413743
+adasind_249480.jpg 360738
+adasind_254250.jpg 370213
+adasind_258420.jpg 350194
+adasind_261480.jpg 371475
+adasind_265065.jpg 315360
+adasind_270517.jpg 334241
+adasind_271039.jpg 338395
+adasind_284016.jpg 366393
+adasind_295948.jpg 361018
+adasind_310008.jpg 334107
+adasind_319432.jpg 436017
+
+
+

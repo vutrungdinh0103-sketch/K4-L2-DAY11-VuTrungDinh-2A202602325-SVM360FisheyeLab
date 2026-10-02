@@ -1,0 +1,12 @@
+﻿
+
+    Directory: C:\Users\vutru\OneDrive\Tài 
+    liệu\GitHub\K4-L2-DAY11-VuTrungDinh-2A202602325-SVM360FisheyeLab\exports
+
+
+Mode                 LastWriteTime         Length Name                                
+----                 -------------         ------ ----                                
+-a---l        28/09/2026     17:44          21962 r1-draft.xml                        
+
+
+
